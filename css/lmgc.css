@@ -7,6 +7,13 @@ body{
     margin:0 auto;
 }
 
+
+
+#par_sample{
+    font-size:50px;    
+    color:red;
+}
+
 a:link, a:visited{
     color:rgb(0,0,0);
 }
