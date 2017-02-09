@@ -1,0 +1,89 @@
+/*LMGC CSS STYLESHEET*/
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size:12px;
+    margin:0 auto;
+}
+
+a:link, a:visited{
+    color:rgb(0,0,0);
+}
+
+a:hover, a:active{
+    color:rgb(255,255,255);
+}
+
+/****************
+******HEAD*******
+*****************/
+#top_head{
+    position:relative;
+    margin:0 auto;
+    min-width: 1005px;
+    max-width:1280px;
+    
+}
+
+#banner{
+   background-color:rgb(135,206,250);
+   position:relative;
+   width:1000px;
+   height:300px;
+   margin:0 auto;
+}
+
+#social_media{
+    width:auto;
+    position:absolute;
+    top:5px;
+    left:5px;
+    color:rgb(0,0,0);
+    font-size:17px;
+}
+
+.fa-ul{
+    margin-left:0px !important;    
+}
+
+.fa-ul > li{
+    float:left;
+    display:inline;
+    padding:3px;
+}
+
+#search_bar{
+    background-color:rgb(30,144,255);
+    width:150px;
+    height:15px;
+    position:absolute;
+    top:5px;
+    right:5px; /*make sure to position outer dive to relative*/
+}
+
+#main_nav{
+    background-color:pink;
+    position:relative;
+    margin:0 auto;
+    text-align:center;
+}
+
+#main_nav > ul > li{
+    background-color:rgb(0,0,0);
+    color:rgb(255,255,255);
+    display:inline-block;
+    margin:0 -1.6px;
+    padding:12px 0;
+}
+
+#main_nav > ul > li a:link, a:visited{
+    color:rgb(255,255,255);
+    text-decoration:none;
+    padding:10px 49px;   
+}
+
+#main_nav > ul > li a:hover, a:active{
+    background-color:white;
+    color:rgb(0,0,0);
+}
