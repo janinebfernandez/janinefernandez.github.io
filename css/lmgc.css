@@ -33,6 +33,13 @@ strong{
 /*******************************************
 ******************HEAD**********************
 ********************************************/
+
+
+#social_media:before {
+   font-family: FontAwesome;
+   content: "\f095";
+}
+
 #wrapper_head, #wrapper_foot{
     position:relative;
     margin:0 auto;
