@@ -34,6 +34,11 @@ strong{
 ******************HEAD**********************
 ********************************************/
 
+.fa fa-address-book:before {
+   font-family: FontAwesome;
+   content: "\f2b9";
+}
+
 
 #wrapper_head, #wrapper_foot{
     position:relative;
