@@ -5,35 +5,42 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size:12px;
     margin:0 auto;
+    color:rgb(0,0,0)
 }
 
-
-
-#par_sample{
-    font-size:50px;    
-    color:red;
+#main_wrapper{
+  margin:0 auto;
+  width:1005px;
+  background-color:rgb(230, 243, 255);
+  min-width: 1005px;
+  max-width:1280px;
+    
 }
 
 a:link, a:visited{
     color:rgb(0,0,0);
+    text-decoration:none;
 }
 
 a:hover, a:active{
-    color:rgb(255,255,255);
+    color:rgb(30,144,255);
+    text-decoration:none;
 }
 
-/****************
-******HEAD*******
-*****************/
-#top_head{
+strong{
+    font-weight:bold;
+}
+/*******************************************
+******************HEAD**********************
+********************************************/
+#wrapper_head, #wrapper_foot{
     position:relative;
     margin:0 auto;
-    min-width: 1005px;
-    max-width:1280px;
     
 }
 
 #banner{
+   background: rgb(135,206,250) url("../images/header.jpg") no-repeat center;
    background-color:rgb(135,206,250);
    position:relative;
    width:1000px;
@@ -60,6 +67,10 @@ a:hover, a:active{
     padding:3px;
 }
 
+.fa-ul li a:hover, .fa-ul li a:active{
+    color:rgb(255,255,255);  
+}
+
 #search_bar{
     background-color:rgb(30,144,255);
     width:150px;
@@ -70,27 +81,392 @@ a:hover, a:active{
 }
 
 #main_nav{
-    background-color:pink;
+    background-color:rgb(0,0,0);
     position:relative;
-    margin:0 auto;
     text-align:center;
+    margin:auto;
 }
 
-#main_nav > ul > li{
+#main_nav ul{
+    padding:0;
+    display:block;
+    line-height:1;
+    font-size:0;
+}
+
+#main_nav ul > li{
     background-color:rgb(0,0,0);
     color:rgb(255,255,255);
     display:inline-block;
-    margin:0 -1.6px;
-    padding:12px 0;
+    padding:0;
+    font-size:15px;
+    margin:0;
 }
 
-#main_nav > ul > li a:link, a:visited{
+#main_nav ul > li a:link, #main_nav ul > li a:visited{
     color:rgb(255,255,255);
     text-decoration:none;
-    padding:10px 49px;   
+    display:block;
+    position:relative;
+    padding:10px 44px 15px 44px;
 }
 
-#main_nav > ul > li a:hover, a:active{
-    background-color:white;
+#main_nav ul > li a:hover, #main_nav ul > li a:active{
+    background-color:rgb(255,255,255);
+    color:rgb(30,144,255);
+    padding:10px 44px;
+    border-bottom:5px solid rgb(30,144,255);
+}
+
+
+
+
+
+
+/*******************************************
+******************BODY**********************
+********************************************/
+.index_wrapper{
+    margin:0 auto;
+    padding:10px;
+    overflow:hidden;
+}
+
+h1{
+   padding:10px 0;
+   font-size:30px;
+}
+
+#main_content{
+    height:auto;
+    float:left;
+    overflow:hidden;
+    width:71.5%;
+}
+
+#front_img{
+    padding:10px 0;
+}
+
+#front_img ul{
+    display:block;
+}
+
+#front_img > ul > li{
+    max-width:230px;
+    display:block;
+    float:left;
+}
+
+#front_img ul > li > img{
+    width:220px;
+    height:150px;
+    padding:10px 0;
+}
+
+#sidebar_events{
+    background-color:rgba(0, 0, 0,.2);
+    float:right;
+    width:250px;
+    height:auto;
+    padding:10px 10px;
+}
+
+#sidebar_teetimes{
+    background-color:rgb(128, 193, 255);
+    width: 250px;
+    height: auto;
+    float: right;
+    padding: 10px 10px;
+}
+
+#sidebar_teetimes ul li{
+    display:block;
+    background:rgb(255,255,255);
+    padding: 0px;
+    margin: 5px;
+    border: 1px solid black;
+    text-align:center;
+}
+
+#sidebar_teetimes ul> li:nth-child(odd) {
+    background: rgb(0, 132, 255);
     color:rgb(0,0,0);
+}
+
+h4{
+    font-weight:bold;
+}
+
+
+.teetimes_link{
+    margin:0;
+    padding:10px 0;
+    width:100%;
+    height:100%;
+}
+
+.active{
+    background-color:rgb(204, 230, 255);
+    color:rgb(0,0,0);
+}
+
+/*******************************************
+*****************COURSE*********************
+********************************************/
+#course_map{
+    width:100%;
+    height:400px;
+    background-color:pink;
+}
+
+#individual_holes{
+    width:550px;
+    height:500px;
+    background-color:blue;
+    float:right;
+}
+
+#holes{
+    width:390px;
+    height:480px;
+    background-color:orange;
+    padding:10px 20px;
+}
+
+/*******************************************
+*****************PROSHOP********************
+********************************************/
+#proshop_info{
+    overflow:hidden;
+}
+
+#proshop_info img{
+    float:right;
+    background-color:pink;
+    width:500px;
+    height:300px;
+    margin-bottom:20px;
+}
+
+
+#proshop_info h2{
+    padding-top:45px;
+}
+
+#merch, #img_details{
+    background-color:rgba(0,0,0,.8);
+    text-align:center;
+    padding:20px 0;
+    width:100%;
+}
+
+#merch ul li{
+    display:inline-block;
+    padding:5px;
+}
+
+#merch img, #img_details img{
+    background-color:white;
+    width:310px;
+    height:195px;
+    border-bottom-left-radius:100px;
+}
+
+
+/*******************************************
+************TOURNAMENTS & EVENT*************
+********************************************/
+#tournaments{
+    width:100%;
+    height:400px;
+    background-color:pink;
+}
+
+#tournaments ul > li{
+    display:inline-block;
+}
+#events{
+    width:auto;
+    height:auto;
+    background-color:red;
+    overflow:hidden;
+    padding:10px;
+}
+#events img{
+    width:400px;
+    height:300px;
+    background-color:aqua;
+    float:right;
+}
+
+#events li{
+    display:inline-block;
+}
+
+#events > ul > li:last-child{
+    float:right;
+    min-width:250px;
+    max-width:300px;
+}
+/*******************************************
+***************MEMBERSHIP*******************
+********************************************/
+#credentials{
+    width:400px;
+    height:500px;
+    background-color:pink;
+    float:right;
+    padding:5px;
+    margin:10px;
+    overflow:hidden;
+}
+
+#membership_info{
+    overflow:hidden;
+}
+
+#membership_info h3, #details{
+    margin-top:60px;
+    font-size:20px;
+}
+
+#membership_info li{
+    font-size:15px;
+    padding:10px 0;
+}
+
+#img_details ul li{
+    display:inline-block;
+    margin:-1px;
+}
+
+
+/*******************************************
+***************TEE TIMES********************
+********************************************/
+#search_teetimes{
+    width:100%;
+    height:50px;
+    background-color:grey;
+    margin-bottom:10px;
+}
+
+#teetimes_selections ol li{
+    margin:0 70px;
+    display:inline-block;
+    font-size:25px;
+}
+
+#teetimes_selections ul{
+    display:inline-block;
+    margin:10px 12px;
+
+}
+.tee_times{
+    padding:10px;
+    text-align:center;
+    background-color:aqua;
+    width:150px;
+    height:200px;
+}
+
+.month_players_discount{
+    font-weight:bold;
+}
+
+#booking_time{
+    font-size:35px;
+    font-weight:100;
+    margin-top:55px;
+}
+
+#price{
+    font-size:15px;
+    margin-top:55px;
+}
+
+#call_now{
+    font-size:25px;
+    text-align:center;
+}
+
+
+/*******************************************
+*****************CONTACT********************
+********************************************/
+
+#contact_form{
+    width:480px;
+    height:500px;
+    background-color:black;
+    float:right;
+}
+
+#staff{
+    width:450px;
+    height:auto;
+    padding:20px;
+    overflow:hidden;
+}
+
+#staff ul li{
+    padding:15px 0;
+}
+
+#staff ul li img {
+    height:80px;
+    width:200px;
+    background-color:orange;
+    margin:0px 0;
+    
+}
+
+#staff ul li:first-child{
+    float:right;
+    min-width:171px;
+    max-width:300px;
+    margin:0px 0px 0 0;
+}
+
+
+/*******************************************
+*****************FOOTER*********************
+********************************************/
+
+.footer_content{
+    background-color:rgb(0,0,0);
+    border:1px solid rgb(230, 243, 255);
+    color:rgb(255,255,255);
+    display:block;
+    padding:15px 10px;
+    float:left;
+    width:313px;
+    height:190px;
+}
+
+.bold_text{
+    font-weight:bold;
+    float:right;
+}
+
+.footer_content > ul > li{
+    padding:5px 0 5px 0;
+}
+
+.footer_content li a:link, .footer_content li a:visited{
+    color:rgb(255,255,255);
+}
+
+.footer_content li a:hover, .footer_content li a:active{
+    color:rgb(30,144,255);    
+}
+
+h2{
+    padding:10px 0;
+    font-size:15px;
+}
+
+#hours{
+    margin-top:55px;
 }
