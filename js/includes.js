@@ -6,7 +6,7 @@ $(function(){
         $("#headerContent").load("includes/lmgc-head.html");
         $("#footerContent").load("includes/lmgc-foot.html");
         
-        /*Content loads for pages html files*/
+        /*Content loads for PAGES html files*/
         $("#headerContent").load("../includes/lmgc-head.html");
         $("#footerContent").load("../includes/lmgc-foot.html");
         });
