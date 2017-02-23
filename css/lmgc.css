@@ -30,17 +30,11 @@ a:hover, a:active{
 strong{
     font-weight:bold;
 }
+
+
 /*******************************************
 ******************HEAD**********************
 ********************************************/
-
-.fa fa-address-book:before {
-   font-family: FontAwesome;
-   content: "\f2b9";
-   color:black;
-}
-
-
 #wrapper_head, #wrapper_foot{
     position:relative;
     margin:0 auto;
