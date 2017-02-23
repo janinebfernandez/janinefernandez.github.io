@@ -35,11 +35,6 @@ strong{
 ********************************************/
 
 
-#social_media:before {
-   font-family: FontAwesome;
-   content: "\f2b9";
-}
-
 #wrapper_head, #wrapper_foot{
     position:relative;
     margin:0 auto;
