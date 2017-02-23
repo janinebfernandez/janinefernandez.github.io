@@ -37,6 +37,7 @@ strong{
 .fa fa-address-book:before {
    font-family: FontAwesome;
    content: "\f2b9";
+   color:black;
 }
 
 
