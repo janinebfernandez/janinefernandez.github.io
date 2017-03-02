@@ -1,21 +1,23 @@
-/*LMGC CSS STYLESHEET*/
+/**LAKE MIRAMAR GOLF COURSE - CSS FILE**/
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+
 body{
-    font-family: 'Nunito', sans-serif;
-    font-size:12px;
+    /*background:url("../images/proshop-club-1.jpg") no-repeat fixed center;
+    background-size:100%;
+    background:cover;*/
+    background:none;
+    font-family:'Nunito', sans-serif;
     margin:0 auto;
-    color:rgb(0,0,0)
+    padding:0;
+    position:relative;
+    width:100%;
+    height:auto;
+    border:1px solid black;
+    color:rgb(0,0,0);
+    font-size:13px;
 }
 
-#main_wrapper{
-  margin:0 auto;
-  width:1005px;
-  background-color:rgb(230, 243, 255);
-  min-width: 1005px;
-  max-width:1280px;
-    
-}
 
 a:link, a:visited{
     color:rgb(0,0,0);
@@ -27,299 +29,368 @@ a:hover, a:active{
     text-decoration:none;
 }
 
+h1{
+    padding:10px 0;
+    font-size:30px;
+}
+
+h2{
+    padding:10px 0;
+    font-size:20px;
+}
+
+h3{
+    padding:30px 0 5px 0;
+    font-size:15px;
+}
+
 strong{
     font-weight:bold;
 }
-
-
-/*******************************************
-******************HEAD**********************
-********************************************/
-#wrapper_head, #wrapper_foot{
-    position:relative;
-    margin:0 auto;
-    
+/************************/
+/*********HEADER*********/
+/************************/
+header{
+    background-color:rgb(230, 243, 255);
+    width:100%;
+    height:300px;
+    background:url("../images/header.jpg") no-repeat center;
+    background:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
-#banner{
-   background: rgb(135,206,250) url("https://c1.staticflickr.com/1/600/32950038591_14d3d59778_b.jpg") no-repeat center;
-    
-  
-   background-size:100%;
-   position:relative;
-   width:1000px;
-   height:300px;
-   margin:0 auto;
-}
-
+/*SOCIAL MEDIA ICONS*/
 #social_media{
-    width:auto;
-    position:absolute;
-    top:5px;
-    left:5px;
-    color:rgb(0,0,0);
-    font-size:17px;
-}
-
-.fa-ul{
-    margin-left:0px !important;    
-}
-
-.fa-ul > li{
     float:left;
-    display:inline;
-    padding:3px;
+    font-size:17px;
+    color:rgb(0,0,0) !important;
 }
 
-.fa-ul li a:hover, .fa-ul li a:active{
-    color:rgb(255,255,255);  
+    .fa-ul{
+        margin-left:0 !important;
+        color:rgb(0,0,0);
+        padding-left:0;
+    }
+
+    .fa-ul li{
+        float:left;
+        display:inline;
+        padding:5px;
+    }
+
+    .fa-ul a:hover, .fa-ul li a:active{
+        color:rgb(255,255,255);
+    }
+
+/**SEARCH BAR**/
+#search_bar, #tfnewsearch{
+    float:right;
+    padding:5px;
 }
 
-#search_bar{
-    background-color:rgb(30,144,255);
-    width:150px;
-    height:15px;
+    .input_class{
+		margin: 0;
+		padding: 5px 15px;
+        background-color:rgba(255,255,255,.9);
+		font-size:12px;
+		color:#666;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 3px 3px;
+		border-bottom-left-radius: 3px 3px;
+	}
+	.search_button {
+		margin: 0;
+		padding: 5px 7px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.search_button:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.search_button::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+
+
+/**LOGO & COURSE NAME**/
+#banner_logo{
+    margin: -250px auto;
+    width:100%;
     position:absolute;
-    top:5px;
-    right:5px; /*make sure to position outer dive to relative*/
-}
-
-#main_nav{
-    background-color:rgb(0,0,0);
-    position:relative;
     text-align:center;
-    margin:auto;
+    font-weight:600;
 }
 
-#main_nav ul{
+#banner_logo img{
+    background-color:rgba(255,255,255,.7);
+    width:5em;
+    padding:10px;
+    border-radius:100%;
+}
+
+#course_name{
+    font-size:50px;
+    color:rgb(255,255,255);
+} 
+/************************/
+/***********NAV**********/
+/************************/
+nav{
+    background-color:rgb(0,0,0);
+    margin:0 auto;
+    text-align:center;
+}
+
+nav ul{
     padding:0;
     display:block;
-    line-height:1;
-    font-size:0;
+    line-height:2;
 }
 
-#main_nav ul > li{
-    background-color:rgb(0,0,0);
-    color:rgb(255,255,255);
+nav ul li{
     display:inline-block;
-    padding:0;
     font-size:15px;
-    margin:0;
+    padding:5px 0;
 }
 
-#main_nav ul > li a:link, #main_nav ul > li a:visited{
+nav ul li a:link, nav ul li a:visited{
     color:rgb(255,255,255);
     text-decoration:none;
-    display:block;
-    position:relative;
-    padding:10px 44px 15px 44px;
+    padding:10px 3em;
 }
 
-#main_nav ul > li a:hover, #main_nav ul > li a:active{
+nav ul li a:hover,nav ul li a:active{
     background-color:rgb(255,255,255);
-    color:rgb(30,144,255);
-    padding:10px 44px;
     border-bottom:5px solid rgb(30,144,255);
+    color:rgb(30,144,255);
 }
-
-
-
-
-
-
-/*******************************************
-******************BODY**********************
-********************************************/
-.index_wrapper{
+/************************/
+/*******INDEX PAGE*******/
+/************************/
+#index_wrapper{
+    background-color:rgb(230, 243, 255);
+    max-width:1000px;
+    min-width:500px;
     margin:0 auto;
     padding:10px;
     overflow:hidden;
 }
 
-h1{
-   padding:10px 0;
-   font-size:30px;
+#main_content, #front_img{
+    width:700px;
+    float:left;
+    padding-bottom:10px;
 }
 
-#main_content{
-    height:auto;
-    float:left;
-    overflow:hidden;
-    width:71.5%;
+#main_content img{
+    padding-bottom:10px;
 }
 
 #front_img{
-    padding:10px 0;
+    padding-top:50px;
 }
 
-#front_img ul{
-    display:block;
-}
-
-#front_img > ul > li{
+#front_img ul li{
     max-width:230px;
     display:block;
     float:left;
 }
 
-#front_img ul > li > img{
+#front_img ul li h3{
+    padding:0 0 5px 0;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+#front_img ul li p{
+    padding: 0 10px 0 0;
+}
+
+#front_img ul li img{
     width:220px;
     height:150px;
     padding:10px 0;
 }
 
+/**SIDEBAR**/
 #sidebar_events{
-    background-color:rgba(0, 0, 0,.2);
+   /* background-color:orange;*/
     float:right;
-    width:250px;
-    height:auto;
-    padding:10px 10px;
+    width:280px;
+    text-align: center;
+}
+
+#sidebar_events h3{
+    padding-top:10px;
+    text-align:center;
+    width:180px;
+    margin:0 auto;
+    
+}
+
+#sidebar_events_list{
+    margin:0 auto;
+    width:200px;
+}
+
+
+#sidebar_events_list li{
+    border-bottom: 1px solid black;
+}
+
+#sidebar_events img{
+    padding-top:20px !important;
 }
 
 #sidebar_teetimes{
-    background-color:rgb(128, 193, 255);
-    width: 250px;
-    height: auto;
-    float: right;
-    padding: 10px 10px;
+    margin-top:20px;
+    padding:10px 0;
+    background-color: rgba(200, 213, 225, 1) ;
+    border: 1px solid rgba(230, 243, 255, .4);
+    box-shadow: inset 2px 2px 2px rgba(230, 243, 255, .5), inset -2px -2px 10px rgba(0, 0, 0, .5);
 }
 
-#sidebar_teetimes ul li{
-    display:block;
-    background:rgb(255,255,255);
-    padding: 0px;
-    margin: 5px;
-    border: 1px solid black;
-    text-align:center;
+#sidebar_teetimes li{
+    padding:5px 0;
 }
-
-#sidebar_teetimes ul> li:nth-child(odd) {
-    background: rgb(0, 132, 255);
-    color:rgb(0,0,0);
-}
-
-h4{
-    font-weight:bold;
-}
-
 
 .teetimes_link{
+   padding:5px 0;
     margin:0;
-    padding:10px 0;
-    width:100%;
-    height:100%;
 }
 
-.active{
-    background-color:rgb(204, 230, 255);
-    color:rgb(0,0,0);
+.teetimes_link:hover, .teetimes_link:active, .teetimes_link a:hover,.teetimes_link a:active{
+    background-color:rgba(0,0,0,.2);
+    color:rgb(255,255,255);
+    text-decoration:none;
+    padding:5px 0;
 }
+#sidebar_teetimes h1:hover{
+    font-weight:600;
+}
+/************************/
+/*********COURSE*********/
+/************************/
 
-/*******************************************
-*****************COURSE*********************
-********************************************/
 #course_map{
-    width:100%;
-    height:400px;
-    background-color:pink;
-}
-
-#individual_holes{
-    width:550px;
-    height:500px;
-    background-color:blue;
-    float:right;
-}
-
-#holes{
-    width:390px;
-    height:480px;
-    background-color:orange;
-    padding:10px 20px;
-}
-
-/*******************************************
-*****************PROSHOP********************
-********************************************/
-#proshop_info{
-    overflow:hidden;
-}
-
-#proshop_info img{
-    float:right;
-    background-color:pink;
-    width:500px;
-    height:300px;
-    margin-bottom:20px;
-}
-
-
-#proshop_info h2{
-    padding-top:45px;
-}
-
-#merch, #img_details{
-    background-color:rgba(0,0,0,.8);
+    width:auto;
+    margin:0 auto;
     text-align:center;
-    padding:20px 0;
+}
+#course_map img{
     width:100%;
+    padding-bottom:10px;
 }
 
-#merch ul li{
-    display:inline-block;
-    padding:5px;
+#course_map a{
+    padding:0;
+    font-size:20px;
 }
 
-#merch img, #img_details img{
-    background-color:white;
-    width:310px;
-    height:195px;
-    border-bottom-left-radius:100px;
+.slideshow_container{
+    background-color:orange;
 }
 
-
-/*******************************************
-************TOURNAMENTS & EVENT*************
-********************************************/
+/************************/
+/*********EVENTS*********/
+/************************/
 #tournaments{
     width:100%;
-    height:400px;
-    background-color:pink;
+    height:auto;
+    padding-bottom:20px;
 }
 
-#tournaments ul > li{
-    display:inline-block;
+#tournament_list{
+    padding:10px 0;
 }
+
+#tournaments li, #tournament_list li{
+    display:inline-block;
+    padding:5px;
+    min-width:140px;
+    text-align:center;
+}
+
+.tournament_list{
+    color:white;
+    padding:5px;
+    background-color:slategrey;
+    box-shadow: inset 2px 2px 2px rgba(230, 243, 255, .5), inset -2px -2px 10px rgba(0, 0, 0, .5);
+}
+
+#tournaments ul:hover{
+    background-color:lightsteelblue;
+}
+
+.description{
+    width:350px;
+    text-align:left;
+}
+
+#tournaments p{
+    padding:10px 0;
+    text-align:center;
+    font-size:12px;
+}
+
 #events{
     width:auto;
     height:auto;
-    background-color:red;
     overflow:hidden;
     padding:10px;
 }
+
 #events img{
     width:400px;
     height:300px;
-    background-color:aqua;
     float:right;
+}
+
+#events ul{
+    padding:5px 0;
+    
 }
 
 #events li{
     display:inline-block;
+    width:250px;
 }
 
-#events > ul > li:last-child{
-    float:right;
-    min-width:250px;
-    max-width:300px;
+#events .fa{
+    width:20px;
 }
-/*******************************************
-***************MEMBERSHIP*******************
-********************************************/
+/*#events > ul > li:last-child{
+    float:right;
+}*/
+
+
+/************************/
+/*******MEMBERSHIP*******/
+/************************/
 #credentials{
-    width:400px;
-    height:500px;
-    background-color:pink;
+    width:480px;
+    height:auto;
     float:right;
     padding:5px;
     margin:10px;
@@ -330,14 +401,24 @@ h4{
     overflow:hidden;
 }
 
-#membership_info h3, #details{
-    margin-top:60px;
+#membership_info h3{
+    margin-top:40px;
     font-size:20px;
 }
 
 #membership_info li{
     font-size:15px;
-    padding:10px 0;
+    padding:5px 0;
+}
+
+strong#Benefits, #details{
+    text-align:center;
+}
+
+#details{
+    margin-bottom:0;
+    font-size:20px;
+    margin-top:220px;
 }
 
 #img_details ul li{
@@ -345,20 +426,94 @@ h4{
     margin:-1px;
 }
 
-
-/*******************************************
-***************TEE TIMES********************
-********************************************/
-#search_teetimes{
-    width:100%;
-    height:50px;
-    background-color:grey;
-    margin-bottom:10px;
+#img_details img{
+    width: 210px;
+    height: 135px;
+    border-bottom-left-radius: 0px;
 }
 
+/*SIGN IN*/
+#sign_in{
+    background-color:rgba(50,150,250,.5);
+    height:235px;
+    padding-bottom:20px;
+    border:1px solid rgb(0,0,0);
+    padding:5px;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .2), inset -1px -1px 1px rgba(0, 0, 0, .2);
+}
+
+#credentials input[type=text], #credentials input[type=password] {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 10px 0;
+    display: inline-block;
+    border-radius:5px;
+    box-sizing: border-box;
+    font-size:12px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    float:right;
+}
+
+.signupbtn,.cancelbtn {
+    background-color: rgb(0,0,0);
+    color:rgb(255,255,255);
+    margin:10px 10px;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .9), inset -5px -5px 5px rgba(255, 255, 255, .3);
+}
+
+/*SIGN UP*/
+#sign_up{
+    border:1px solid rgb(0,0,0);
+    padding:5px;
+    height:320px;
+    background-color:rgba(50,150,250,.5);
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .2), inset -1px -1px 1px rgba(0, 0, 0, .2);
+}
+/************************/
+/********TEETIMES********/
+/************************/
+#search_teetimes{
+    width:100%;
+    height:45px;
+    background-color:grey;
+    margin-bottom:10px;
+    border-radius:5px;
+}
+
+.input_teetime{
+    line-height:20px;
+    width:270px;
+	margin: 0;
+	padding: 5px 15px;
+    background-color:rgba(255,255,255,.9);
+	font-size:12px;
+	color:#000;
+	border:1px solid #0076a3; border-right:0px;
+	border-top-left-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+}
+
+#reserve_now{
+    width:100%;
+    font-size:25px;
+    height:50px;
+    background-color:rgb(255,128,0);
+}
 #teetimes_selections ol li{
     margin:0 70px;
     display:inline-block;
+}
+
+#teetimes_selections ol li h3{
     font-size:25px;
 }
 
@@ -368,22 +523,36 @@ h4{
 
 }
 .tee_times{
-    padding:10px;
+    padding:8px;
     text-align:center;
-    background-color:aqua;
+    background-color:rgb(115,115,115);
+    color:rgb(255,255,255);
     width:150px;
     height:200px;
+    border:.5px solid rgb(0,0,0);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    
+    /*teetimes popup properties*/
+    position:relative;
+    display:inline-block;
+    cursor:pointer;
+    user-select:none; 
 }
+
 
 .month_players_discount{
     font-weight:bold;
+    margin-top:5px;
 }
 
 #booking_time{
     font-size:35px;
     font-weight:100;
-    margin-top:55px;
+    margin:30px 0 7px -5px;
+    width:160px;
+    padding:5px 0;
 }
+
 
 #price{
     font-size:15px;
@@ -395,16 +564,111 @@ h4{
     text-align:center;
 }
 
+/*TEETIME POPUP*/
+#popup{
+    display:none;
+    width:160px;
+    background-color:#555;
+    color:rgb(255,128,0);
+    text-align:center;
+    border-radius:6px;
+    padding:8px 0;
+    position:absolute;
+    z-index:1;
+    bottom:25%;
+    left:50%;
+    margin-left:-80px;
+}
 
-/*******************************************
-*****************CONTACT********************
-********************************************/
+.show{
+    display:block;
+}
+
+/************************/
+/*********PROSHOP********/
+/************************/
+#proshop_info{
+    overflow:hidden;
+    padding-bottom:30px;
+}
+
+#proshop_info img{
+    float:right;
+    width:500px;
+    height:300px;
+    margin-bottom:20px;
+    padding-left:20px;
+}
+
+
+#proshop_info h2{
+    padding-top:45px;
+}
+
+#merch{
+    border-bottom: 3px solid rgba(255,255,255,0.5);
+}
+#merch, #img_details{
+    background-color:rgba(0,0,0,.7);
+    text-align:center;
+    padding:20px 0;
+    width:100%;
+}
+
+#merch ul li{
+    display:inline-block;
+    padding:5px;
+}
+
+#merch img{
+    background-color:white;
+    width:310px;
+    height:195px;
+    border-bottom-left-radius:100px;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+/************************/
+/********CONTACTS********/
+/************************/
+#contact_wrapper{
+    float:right;
+    position:relative;
+}
+
 
 #contact_form{
     width:480px;
-    height:500px;
-    background-color:black;
-    float:right;
+    height:auto;
+    background-color:rgba(50,150,250,.5);
+    padding:10px;
+    margin-top:25px;
+    overflow:hidden;
+}
+
+#contact_form input[type=text]{
+    width: 100%;
+    padding: 5px 5px;
+    margin: 10px 0;
+    display: inline-block;
+    border-radius:5px;
+    box-sizing: border-box;
+    font-size:12px;
+}
+
+#contact_form textarea{
+    width:100%;
+    border-radius:5px;
+    box-sizing:border-box;
+    height:150px;
+}
+
+#google_map{
+    background-color:rgba(50,150,250,.5);
+    width:480px;
+    height:400px;
+    padding:10px;
+    
 }
 
 #staff{
@@ -421,7 +685,7 @@ h4{
 #staff ul li img {
     height:80px;
     width:200px;
-    background-color:orange;
+    background-color:rgba(50,150,250,.5);
     margin:0px 0;
     
 }
@@ -433,29 +697,40 @@ h4{
     margin:0px 0px 0 0;
 }
 
+/************************/
+/*********FOOTER*********/
+/************************/
+footer{
+    background-color:rgb(0,0,0);
+    width:100%;
+    height:350px;
+    color:rgb(255,255,255);
+    overflow:hidden;
+}
 
-/*******************************************
-*****************FOOTER*********************
-********************************************/
+#footer_wrapper{
+    margin:0 auto;
+    width:1200px;
+    height:300px;
+    padding-bottom:30px;
+}
 
 .footer_content{
-    background-color:rgb(0,0,0);
-    border:1px solid rgb(230, 243, 255);
-    color:rgb(255,255,255);
-    display:block;
-    padding:15px 10px;
     float:left;
-    width:313px;
-    height:190px;
+    display:block;
+    height:260px;
+    width:20%;
+    padding:20px 20px 20px 110px;
 }
 
-.bold_text{
-    font-weight:bold;
-    float:right;
+.footer_content ul, .footer_content p{
+    margin-top:10px;
 }
 
-.footer_content > ul > li{
-    padding:5px 0 5px 0;
+.footer_content li{
+    font-size:15px;
+    padding:5px 0;
+    overflow: hidden;
 }
 
 .footer_content li a:link, .footer_content li a:visited{
@@ -466,11 +741,13 @@ h4{
     color:rgb(30,144,255);    
 }
 
-h2{
-    padding:10px 0;
-    font-size:15px;
+#hours{
+    padding-top:50px;
 }
 
-#hours{
-    margin-top:55px;
+#copyright{
+    width:100%;
+    bottom:0;
+    text-align:center;
+    font-size:10px;
 }
