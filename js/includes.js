@@ -3,12 +3,12 @@
 $(document).ready(function(){
     
 $(function(){
-        $("#headerContent").load("includes/lmgc-head.html");
-        $("#footerContent").load("includes/lmgc-foot.html");
+        $("#headerContent").load("includes/lmgc-header.html");
+        $("#footerContent").load("includes/lmgc-footer.html");
         
         /*Content loads for PAGES html files*/
-        $("#headerContent").load("../includes/lmgc-head.html");
-        $("#footerContent").load("../includes/lmgc-foot.html");
+        $("#headerContent").load("../includes/lmgc-header.html");
+        $("#footerContent").load("../includes/lmgc-footer.html");
         });
 
 
