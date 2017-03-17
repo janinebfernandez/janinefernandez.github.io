@@ -1,7 +1,7 @@
 /**LAKE MIRAMAR GOLF COURSE - CSS FILE**/
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-
+@media only screen and (min-width: 968px) {
 body{
     /*background:url("../images/proshop-club-1.jpg") no-repeat fixed center;
     background-size:100%;
@@ -43,6 +43,10 @@ h3{
     padding:30px 0 5px 0;
     font-size:15px;
 }
+    
+p{
+    line-height:15px;
+}
 
 strong{
     font-weight:bold;
@@ -54,7 +58,7 @@ header{
     background-color:rgb(230, 243, 255);
     width:100%;
     height:300px;
-    background:url("https://c1.staticflickr.com/1/600/32950038591_14d3d59778_b.jpg") no-repeat center;
+    background:url("../images/header.jpg") no-repeat center;
     background:cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -160,6 +164,7 @@ nav{
     background-color:rgb(0,0,0);
     margin:0 auto;
     text-align:center;
+    height:45px;
 }
 
 nav ul{
@@ -185,6 +190,11 @@ nav ul li a:hover,nav ul li a:active{
     border-bottom:5px solid rgb(30,144,255);
     color:rgb(30,144,255);
 }
+    
+/*MOBILE NAV*/
+    .dropdown{
+        display:none;
+    }
 /************************/
 /*******INDEX PAGE*******/
 /************************/
@@ -195,9 +205,109 @@ nav ul li a:hover,nav ul li a:active{
     margin:0 auto;
     padding:10px;
     overflow:hidden;
+    position:relative;
 }
 
-#main_content, #front_img{
+    #sidebar_teetimes, #sidebar_events{
+        float:right;
+        width:255px;
+        padding:0 15px 15px 15px;
+        border-left:1px solid black;
+        position:relative;
+    }
+    
+    #sidebar_teetimes h2{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        width: 91px;
+    }
+    
+    #sidebar_teetimes ul{
+        display:inline-block;
+        padding:20px 0;
+    }
+    
+    #sidebar_teetimes ul li{
+        padding:10px 0;
+    }
+    
+    
+    ul#teetimes_second_list{
+        padding-left:20px;
+    }
+    
+    
+    #book_now{
+        text-align:center;
+    }
+    
+    #book_now a{
+        background-color: rgb(206,206,206);
+        font-size: 25px;
+        padding: 5px 10px;
+        box-shadow: inset 2px 2px 2px rgba(226, 226, 226, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+        background: -webkit-gradient(linear, left top, left bottom, from(#CECECE), to(#A0A0A0));
+    }
+    
+    #book_now a:hover{
+        background: -webkit-gradient(linear, left top, left bottom, from(#A0A0A0), to(#CECECE));
+    }
+    
+    #main_content{
+        width:700px; 
+    }
+    
+    #main_content img, #main_content{
+        padding-bottom:10px;
+        width:83%;
+    } 
+    
+    #main_content h1{
+        position: absolute;
+        background-color: rgba(255, 255, 255, .7);
+        padding: 2px 5px;
+        margin-top: 25px
+    }
+    
+    
+    #sidebar_events{
+        float:right;
+    }
+    
+    #sidebar_events li{
+        display:block;
+    }
+    
+    #sidebar_events h3{
+        padding-top:9px;
+    }
+    
+    
+    #front_img{
+        background-color:rgba(255,255,255,.8);
+        margin-top:40px;
+        overflow:hidden;
+        width:100%;
+    }
+    
+    #adventures li{
+        width:210px;
+        height:325px;
+        float:left;
+        display:inline-block;
+        padding:10px;
+        border-left:1px solid black;
+    }
+    
+    #front_img img{
+        width:210px;
+        padding:0;
+    }
+    
+    
+/*ORGINAL LAYOUT*/
+/*#main_content, #front_img{
     width:700px;
     float:left;
     padding-bottom:10px;
@@ -233,10 +343,10 @@ nav ul li a:hover,nav ul li a:active{
     padding:10px 0;
 }
 
-/**SIDEBAR**/
+/**SIDEBAR**//*
 #sidebar_events{
    /* background-color:orange;*/
-    float:right;
+/*    float:right;
     width:280px;
     text-align: center;
 }
@@ -269,15 +379,29 @@ nav ul li a:hover,nav ul li a:active{
     background-color: rgba(200, 213, 225, 1) ;
     border: 1px solid rgba(230, 243, 255, .4);
     box-shadow: inset 2px 2px 2px rgba(230, 243, 255, .5), inset -2px -2px 10px rgba(0, 0, 0, .5);
+    height:auto;
 }
 
 #sidebar_teetimes li{
     padding:5px 0;
+    border-bottom:1px solid rgb(0,0,0);
+    width:250px;
+    margin:0 auto;
 }
 
 .teetimes_link{
    padding:5px 0;
-    margin:0;
+   margin:0;
+}
+
+
+#book_now{
+    padding:20px;
+    font-size:20px;
+}
+
+#sidebar_teetimes button a:hover{
+    color:rgb(255,255,255);
 }
 
 .teetimes_link:hover, .teetimes_link:active, .teetimes_link a:hover,.teetimes_link a:active{
@@ -288,30 +412,80 @@ nav ul li a:hover,nav ul li a:active{
 }
 #sidebar_teetimes h1:hover{
     font-weight:600;
-}
+}*/
 /************************/
 /*********COURSE*********/
 /************************/
 
 #course_map{
     width:auto;
+    height:600px;
     margin:0 auto;
     text-align:center;
 }
 #course_map img{
-    width:100%;
-    padding-bottom:10px;
+    width:95%;
+    margin-bottom:10px;
+    border:15px solid rgba(201,171,126,.5);
 }
 
 #course_map a{
     padding:0;
+    margin-top:10px;
     font-size:20px;
 }
-
-.slideshow_container{
-    background-color:orange;
+    
+.caption{
+    padding-left:10px;    
+}
+    
+/*COURSE SLIDESHOW*/
+.large_slide{
+    margin:99px 25px 0 25px; 
+    border:15px solid rgb(255,255,255);
+}
+.mySlides {
+    display:none;
 }
 
+.w3-center{
+    overflow:hidden;
+    margin:0 auto;
+}
+
+button.demo,.w3-button{
+    background-color:rgb(95,95,95);
+    color:rgb(255,255,255);
+    width:9.08%;
+    float:left;
+}  
+
+button.demo:hover{
+    background-color:rgba(201,171,126,.5);
+    color:rgb(0,0,0);
+}
+
+.mySlides p{
+    height:50px;
+    width:450px;
+}
+
+.mySlides-1{
+    width:43.5%;
+    float:right;
+}
+
+button.w3-button.demo.thumbnails{
+    width:150px;
+    padding:2px;
+    margin:5px;
+}
+   
+
+img.mySlides-2{
+    width:100%;
+}
+    
 /************************/
 /*********EVENTS*********/
 /************************/
@@ -328,7 +502,7 @@ nav ul li a:hover,nav ul li a:active{
 #tournaments li, #tournament_list li{
     display:inline-block;
     padding:5px;
-    min-width:140px;
+    min-width:230px;
     text-align:center;
 }
 
@@ -342,29 +516,71 @@ nav ul li a:hover,nav ul li a:active{
 #tournaments ul:hover{
     background-color:lightsteelblue;
 }
-
-.description{
-    width:350px;
-    text-align:left;
+    
+#tour_button{
+    width:150px;
+    background-color:white;
+    color:black;
+    border-radius:5px;
+    padding:10px;
+    margin:0;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
 }
 
+    #tour_button:hover{
+        background: -webkit-gradient(linear, left top, left bottom, from(#DFBE85), to(#CF9C42));
+    }
+    
+
 #tournaments p{
-    padding:10px 0;
+    padding:3px 0;
     text-align:center;
     font-size:12px;
 }
 
+
+    /*EVENT HANDLER*/
+    .description2{
+            display:none;
+            color:white;
+            width:97.9%;
+            background: -webkit-gradient(linear, left top, left bottom, from(#7A7A7A), to(#494949));
+        }
+    
+    ul.tournament_list.row{
+        padding:5px;
+    }
+    
+    /*EVENT HANDLER ENDS*/
+    
 #events{
     width:auto;
     height:auto;
     overflow:hidden;
     padding:10px;
 }
-
+    
+#events h1{
+    background-color: rgba(255,255,255,.8);
+    width: 90px;
+    padding: 5px;
+    margin-top:35px;
+    position: absolute;
+}
+    
 #events img{
-    width:400px;
-    height:300px;
-    float:right;
+    width:550px;
+}
+
+#events_list{
+    width: auto;
+    height: auto;
+    float: right;
+    background-color: rgba(230, 243, 255,.9);
+    padding-left:10px;
+    position: relative;
+    margin-top: -376px;
+    border-radius:10px;
 }
 
 #events ul{
@@ -380,9 +596,65 @@ nav ul li a:hover,nav ul li a:active{
 #events .fa{
     width:20px;
 }
-/*#events > ul > li:last-child{
-    float:right;
+
+/*POPUP INFORMATION*/
+/* Popup container - can be anything you want */
+/*#legend{
+    background-color:aqua;
+    width: 130px;
+    height: 300px;
+    margin: -345px 0 0 420px;
+    position: absolute;
+    padding:5px;
 }*/
+
+
+.popup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popuptext{
+    visibility: hidden;
+    width: 280px;
+    height:25px;
+    color:steelblue;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    /*z-index: 1;
+    bottom: 125%;
+    left: 450px;*/
+    /*margin: -5px 0 0 350px;*/
+    margin: 330px 0 0 -20px;
+
+}
+
+
+    
+.popup .show{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}    
 
 
 /************************/
@@ -411,15 +683,35 @@ nav ul li a:hover,nav ul li a:active{
     padding:5px 0;
 }
 
-strong#Benefits, #details{
+#benefits, #details{
     text-align:center;
 }
 
-#details{
-    margin-bottom:0;
-    font-size:20px;
-    margin-top:220px;
+#benefits{
+    width:350px;
+    height:230px;
+    background:url('../images/combo-3.jpg') no-repeat;
+    background-color:rgba(232, 195, 132,.9);
+    background-blend-mode:screen;
+    background-size:100%;
+    margin:90px 70px 0 70px;
 }
+    
+#benefits h3{
+   background-color:rgba(0,0,0,.55);
+    margin-top:10px;
+    width:auto;
+    padding:5px;
+    color:white;
+}
+    
+#details{
+    font-size: 20px;
+    margin-top: 125px;
+    line-height:25px;
+    border-top:1px solid black;
+    width:490px;
+    }
 
 #img_details ul li{
     display:inline-block;
@@ -491,7 +783,7 @@ button {
 
 .input_teetime{
     line-height:20px;
-    width:270px;
+    width:305px;
 	margin: 0;
 	padding: 5px 15px;
     background-color:rgba(255,255,255,.9);
@@ -506,8 +798,16 @@ button {
     width:100%;
     font-size:25px;
     height:50px;
-    background-color:rgb(255,128,0);
+    background:-webkit-gradient(linear, left top, left bottom, from(#DFBE85), to(#CF9C42));
 }
+
+#reserve_now:hover{ 
+    /*background-color:rgb(255,80,0);*/
+    color:black;
+    background: -webkit-gradient(linear, left top, left bottom, from(#CF9C42), to(#DFBE85));
+}
+
+
 #teetimes_selections ol li{
     margin:0 70px;
     display:inline-block;
@@ -550,18 +850,19 @@ button {
     font-weight:100;
     margin:30px 0 7px -5px;
     width:160px;
-    padding:5px 0;
+    padding:15px 0;
 }
 
 
 #price{
     font-size:15px;
-    margin-top:55px;
+    margin-top:50px;
 }
 
 #call_now{
     font-size:25px;
     text-align:center;
+    padding:10px 0;
 }
 
 /*TEETIME POPUP*/
@@ -569,7 +870,7 @@ button {
     display:none;
     width:160px;
     background-color:#555;
-    color:rgb(255,128,0);
+    color:#E8C384;
     text-align:center;
     border-radius:6px;
     padding:8px 0;
@@ -592,22 +893,28 @@ button {
     padding-bottom:30px;
 }
 
-#proshop_info img{
+
+#proshop_img{
     float:right;
-    width:500px;
-    height:300px;
-    margin-bottom:20px;
-    padding-left:20px;
+    padding:0 0 20px 15px;
+    text-align:right;
+    width:470px;
+    position:relative;
+}
+#proshop_info img{
+    width: 100%;
+    height: auto;
+    margin-top: 56px;
 }
 
-
-#proshop_info h2{
-    padding-top:45px;
-}
-
-#merch{
-    border-bottom: 3px solid rgba(255,255,255,0.5);
-}
+#image_contact{
+    position: absolute;
+    margin-top: -189px;
+    right:0;
+    background-color:rgba(255,255,255,.8);
+    }
+    
+    
 #merch, #img_details{
     background-color:rgba(0,0,0,.7);
     text-align:center;
@@ -618,16 +925,78 @@ button {
 #merch ul li{
     display:inline-block;
     padding:5px;
+    background-color:black;
 }
 
 #merch img{
     background-color:white;
-    width:310px;
+    min-width:325px;
     height:195px;
     border-bottom-left-radius:100px;
     box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
 }
+    
+#proshop_img button{
+    margin-top:20px;
+    background-color:rgb(201, 171, 126);
+    font-size:15px;
+}
+    
+#proshop_img button:hover{
+    background-color:rgba(201, 171, 126, .5);
+    color:black;
+}
 
+    .merch_products{
+        background-color:rgba(0,0,0,.6);
+        color:white;
+        position:absolute;
+        padding:10px;
+    }
+
+/*EVENT HANDLER*/
+        .article{
+            text-align:center;
+        }
+        
+        .article.current, .article{
+            background-color:rgba(201, 171, 126, .5);
+            margin-left:0;
+            width:480px;
+            height:auto;
+        }
+            
+        .article:hover, .current{
+           background-color:rgba(201, 171, 126, .75);
+        }
+            
+        h2.source{margin:0;}
+        
+        .row p{margin:0;}
+        
+        .row{padding:10px;}
+            
+        .item{
+            /*make each 'current' a point*/
+            cursor:pointer;
+            border:1px solid black;
+        }
+        
+        .item:hover{
+            background-color:rgb(201, 171, 126);
+        }
+            
+        .description1{
+            display:none;
+            background-color:black;
+            color:white;
+            width:460px;
+        }
+    
+        .description1 p{
+            padding-top:5px;
+            text-align:left;
+        }
 /************************/
 /********CONTACTS********/
 /************************/
@@ -642,7 +1011,7 @@ button {
     height:auto;
     background-color:rgba(50,150,250,.5);
     padding:10px;
-    margin-top:25px;
+    margin-top:90px;
     overflow:hidden;
 }
 
@@ -677,24 +1046,51 @@ button {
     padding:20px;
     overflow:hidden;
 }
+    
+    #staff ul{
+        padding:0;
+        padding:15px 0;
+        overflow:hidden;
+    }
 
-#staff ul li{
-    padding:15px 0;
-}
 
 #staff ul li img {
     height:80px;
     width:200px;
     background-color:rgba(50,150,250,.5);
-    margin:0px 0;
+    margin-top:10px;
+    filter:grayscale(70%);
     
 }
 
 #staff ul li:first-child{
     float:right;
-    min-width:171px;
-    max-width:300px;
-    margin:0px 0px 0 0;
+    margin:0;
+    padding:0;
+}
+    
+    #staff h2{
+        border-bottom:1px solid black;
+        padding-bottom:5px;
+        margin-bottom:10px;
+        width:165px;
+    }
+#inquiry_text{
+    margin-top:65px;
+}
+    
+#inquiry_text p{
+    margin:5px 0;
+}
+    
+    
+#inquiries_text{
+    background-color:black;
+    color:white;
+    padding:4px;
+    margin-bottom:10px;
+    width:442px;
+    
 }
 
 /************************/
@@ -706,21 +1102,25 @@ footer{
     height:350px;
     color:rgb(255,255,255);
     overflow:hidden;
+    margin:0 auto;
 }
 
 #footer_wrapper{
     margin:0 auto;
-    width:1200px;
+    width:1100px;
     height:300px;
     padding-bottom:30px;
+    
 }
 
 .footer_content{
     float:left;
     display:block;
     height:260px;
-    width:20%;
-    padding:20px 20px 20px 110px;
+    width:25%;
+    padding:20px 60px 20px 20px;
+    
+    margin:auto;
 }
 
 .footer_content ul, .footer_content p{
@@ -751,3 +1151,5 @@ footer{
     text-align:center;
     font-size:10px;
 }
+    
+}/*@MEDIA FOR DESKTOP*/ 
