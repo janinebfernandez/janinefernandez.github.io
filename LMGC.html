@@ -5,7 +5,7 @@
     <title>Lake Miramar Golf Course</title>
     
     <!--Sets viewport to device's native width at 100%.-->
-    <meta name="viewport" content="width=device-width, initial-scale=10.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     
     <!--Google Font - Nunito-->
@@ -14,6 +14,14 @@
     <!--External Stylesheets----!!change location in GITHUB!!-->
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/lmgc.css" type="text/css" rel="stylesheet">
+    <!--<link href="css/lmgc_tablet.css" type="text/css" rel="stylesheet">
+    <link href="css/lmgc_mobile.css" type="text/css" rel="stylesheet">-->
+    
+    
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 968px)" href="css/lmgc_tablet.css" />
+    
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 510px)" href="css/lmgc_mobile.css" />
+    
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script src="js/content.js"></script>
     
@@ -36,7 +44,7 @@
         </div><!--SOCIAL MEDIA ICONS ENDS-->
         
         <!--SEARCH BAR-->
-        <div is="search_bar">
+        <div id="search_bar">
             <form id="tfnewsearch" method="get" action="http://www.google.com">
 		        <input type="text" id="input_id" class="input_class" name="q" size="21" maxlength="120" value="Search our website"><input type="submit" value=">>" class="search_button">
 		      </form>
@@ -50,9 +58,6 @@
         <p id="course_name">Lake Miramar Golf Course</p>
     </div>
     
-    
-    
-  
     <!--MAIN NAVIGATION-->
     <nav>
         <ul>
@@ -65,63 +70,124 @@
          <li><a href="pages/contact.html">Contact</a></li>
         </ul>
     </nav>
+        
+        <!--MOBILE NAVIGATION-->
+        <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="lmgc.html">Home</a>
+             <a href="pages/course.html">Course</a>
+             <a href="pages/events.html">Events</a>
+             <a href="pages/teetimes.html">TeeTimes</a>
+             <a href="pages/proshop.html">Proshop</a>
+             <a href="pages/membership.html">Membership</a>
+             <a href="pages/contact.html">Contact</a>
+          </div>
+        </div>
+    
+    
+   <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
     
     
     <!--MAIN BODY BEGINS-->
     <div id="index_wrapper">
-       <h1>Welcome to Lake Miramar Golf Course</h1>
+        
+        
+        <div id="sidebar_teetimes">
+            <h2>Tee Times</h2> <p style="color:grey;margin-top:5px;">Popular!</p>
+            <ul>
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 27 2017</strong></h4><p>1:10pm - 4 Players</p></a></div></li>
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 27 2017</strong></h4><p>3:30pm - 4 Players</p></a></div></li>
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 28 2017</strong></h4><p>1:10pm - 4 Players</p></a></div></li>
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 28 2017</strong></h4><p>3:30pm - 4 Players</p></a></div></li>
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 29 2017</strong></h4><p>1:10pm - 4 Players</p></a></div></li>
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 29 2017</strong></h4><p>3:30pm - 4 Players</p></a></div></li>
+            </ul>
+            <ul id="teetimes_second_list">
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 30 2017</strong></h4><p>1:10pm - 4 Players</p></a></div></li>
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 30 2017</strong></h4><p>3:10am - 4 Players</p></a></div></li>
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 31 2017</strong></h4><p>6:45am - 4 Players</p></a></div></li>
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 31 2017</strong></h4><p>9:45am - 4 Players</p></a></div></li>
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 31 2017</strong></h4><p>12:50pm - 2 Players</p></a></div></li>
+                <li><div class="teetimes_link"><a href=""><h4><strong>March 31 2017</strong></h4><p>3:50pm - 2 Players</p></a></div></li>
+            </ul>
+            <div id="book_now"><a href="pages/teetimes.html">BOOK NOW!</a></div>
+            </div>
+        
+        
+        
         <section id="main_content">
+            <h1>Welcome to Lake Miramar Golf Course</h1>
             <img src="images/homepage-combo.jpg" alt="Lake Miramar Golf Course">
-            <p>	Lake Mira Mar Golf Course is an 9-hole golf course set in the hill of Mira Mar Lake.
+            <p>	Lake Miramar Golf Course is an 9-hole golf course set in the hills of Mira Mar Lake.
 
-            It is surrounded by 9,000 acres of hills with a running path visited by many for jogging, picnic, and for enjoying the view.
-
-            <p>It over looks Mira Mesa to its west and Poway conveniently to its east, this course hase been rated as one of the best golf course in central San Diego.</p>
+            It is surrounded by 9,000 acres of hills with a running path visited by many for jogging, picnic, and for enjoying the view.</p>
+            
+            <br><br>
+            <p>It over looks Mira Mesa to its west and Poway conveniently to its east, this course hase been rated as one of the best golf course in central San Diego. It truly is a great course with dramatic panorama of the surrounding hills and lake.</p>
 
             <h3>Convinient Spot for the family!</h3>
-            Lake Mira Mar Golf Course is an affordable escape from the city. Enjoy the fresh air with your loved ones or simply meet new friends.We have a snack bar conviniently located right next to the parking lot along with bikes which are availble for rent.Take advantage of the boats we have on the docks and have a nice tour around the lake.</p> 
+            <p>Lake Mira Mar Golf Course is an affordable escape from the city. Enjoy the fresh air with your loved ones or simply meet new friends.We have a snack bar conviniently located right next to the parking lot along with bikes which are availble for rent.Take advantage of the boats we have on the docks and have a nice tour around the lake. You are sure to enjoy this beautiful location. </p>	
+        
+            </section> <!--MAIN CONTENT ENDS-->
+    
 
-            <p>You are sure to enjoy this beautiful location. </p>	
+        
         
         <section id="front_img">
-            <h2>Choose an Adventrure</h2>
-            <ul>
-                <li><img src="images/homepage-picnic.jpg" alt="Picnic Tables"><br><h3><i class="fa fa-fire" aria-hidden="true"></i> Picnic for everyone</h3><p>Enjoy a beautiful day at the lake by bringing family, friends, and food! With over 10 spots for picnic and a breath taking view, you are sure to enjoy! Grills are also available for use through out the lake and a snack bar conviniently located by the entrance.</p></li>
+            
+            
+            
+            <aside id="sidebar_events">
+            <ul id="sidebar_events_list">
+                <h2>Upcoming Events</h2>
+                <img src="images/homepage-range.jpg" alt="Event">
                 
-                <li><img src="images/homepage-kayak.jpg" alt="Golf Course Kayak"><h3><i class="fa fa-tint" aria-hidden="true"> Lake Adventures</h3><p></i>Bring your own boat or rent one at our Concesssion Stand! There is a dock access located by the Proshop. Here you can safely dock your boat or kayak and set off into the lake. Please advice of the ducks. They are a handful. If you need assistant please come by the Concession stand! We are more than happily to provide the best experience for you.</p></li>
+                <li><h3>RRO TOURNAMENT</h3><p><strong>March 4, 2017 - 7:00am</strong></p></li>
+                <li><h3>PRO TOURNAMENT</h3><p><strong>March 4, 2017 - 1:00pm</strong></p></li>
+                <li><h3>AMATEUR TRYOUTS</h3><p><strong>March 4, 2017 - 11:00am</strong></p></li>
+                <li><h3>FREE GOLF LESSONS</h3><p><strong>March 4, 2017 - 3:00pm</strong></p></li>
+                <li><h3>$5 RANGE</h3><p><strong>Daily - 4:00 till Close</strong></p></li>
+            </ul>
+            </aside>
+            
+            
+            
+            <div id="adventures">
+            <h2 style="padding-left:10px;">Choose an Adventure</h2>
+                <li><img src="images/homepage-picnic.jpg" alt="Picnic Tables"><h3><i class="fa fa-fire" aria-hidden="true"></i> Picnic for everyone</h3><p>Enjoy a beautiful day at the lake by bringing family, friends, and food! With over 10 spots for picnic and a breath taking view, you are sure to enjoy! Grills are also available for use through out the lake and a snack bar conviniently located by the entrance.</p></li>
+                
+                <li><img src="images/homepage-kayak.jpg" alt="Golf Course Kayak"><h3><i class="fa fa-tint" aria-hidden="true"></i> Lake Adventures</h3><p>Bring your own boat or rent one at our Concesssion Stand! There is a dock access located by the Proshop. Here you can safely dock your boat or kayak and set off into the lake. Please advice of the ducks. They are a handful. If you need assistant please come by the Concession stand! We are more than happily to provide the best experience for you.</p></li>
                 
                 <li><img src="images/homepage-path.jpg" alt="5k Running Path"><h3><i class="fa fa-heart" aria-hidden="true"></i> 5K Path</h3><p>There is a path that goes around the golf course and the lake. If you are here to simply enjoy a walk or put in some miles into your daily exercise then this is the spot to be! The path is 5 miles long with small hiking trails and shortcuts. Pets are allowed!</p></li>
-            </ul>
-        </section><!--front_img ENDS-->
-    </section> <!--MAIN CONTENT ENDS-->
-    
-        <aside id="sidebar_events">
-            <h3>UPCOMING EVENTS</h3>
-            <ul id="sidebar_events_list">
-                <li><h3>Pro Tournament</h3><p><strong>March 4, 2017 - 7:00am</strong></p></li>
-                <li><h3>Pro Tournament</h3><p><strong>March 4, 2017 - 1:00pm</strong></p></li>
-                <li><h3>Amateur Tryouts</h3><p><strong>March 4, 2017 - 11:00am</strong></p></li>
-                <li><h3>Free Golf Lessons</h3><p><strong>March 4, 2017 - 3:00pm</strong></p></li>
-                <li><h3>$5 Range</h3><p><strong>Daily - 4:00 till Close</strong></p></li>
-            </ul>
-        
-            <img src="images/homepage-range.jpg" alt="Event" style="width:250px; height:110px; padding-top:5px;">
-        
-    
-
-            <div id="sidebar_teetimes">
-            <h2>Tee Times</h2>
-                <ul>
-                <li><div class="teetimes_link"><a href=""><h4>March 27 2017</h4><p>3:30pm - 4 Players</p></a></div></li>
-                <li><div class="teetimes_link"><a href=""><h4>March 28 2017</h4><p>3:30pm - 4 Players</p></a></div></li>
-                <li><div class="teetimes_link"><a href=""><h4>March 29 2017</h4><p>3:30pm - 4 Players</p></a></div></li>
-                <li><div class="teetimes_link"><a href=""><h4>March 30 2017</h4><p>3:10pm - 4 Players</p></a></div></li>
-                <li><div class="teetimes_link"><a href=""><h4>March 31 2017</h4><p>12:50pm - 4 Players</p></a></div></li>
-                <li><div class="teetimes_link"><a href=""><h4>March 31 2017</h4><p>3:50am - 4 Players</p></a></div></li>
-            </ul>
-            <h1 style="text-align:center;"><a href="pages/teetimes.html">BOOK NOW!</a></h1>
             </div>
-        </aside>
+    
+            
+        </section><!--front_img ENDS-->
+    
+    
+        
     
     </div><!--MAIN BODY ENDS-->
 
@@ -160,8 +226,8 @@
                 <p><i class="fa fa-phone" aria-hidden="true"></i> (858) 531 - 0000</p>
                 <p><i class="fa fa-envelope-o" aria-hidden="true"></i> proshop@lmgc.com</p>
             <h2 id="hours">Hours</h2>
-                <p>Mon-Fri  <span class="bold_text">7:00am - 5:30pm</span></p>
-                <p>Sat <span class="bold_text">Tournaments Only</span></p>
+                <p>Mon-Fri  <strong>7:00am - 5:30pm</strong></p>
+                <p>Sat - <strong>Tournaments Only</strong></p>
         </div>
     </div><!--FOOT WRAPPER-->
         <div id="copyright">Porfolio Sample - LAKE MIRAMAR GOLF COURSE - <i class="fa fa-copyright" aria-hidden="true"></i> 2017 by Janine Fernandez</div>
