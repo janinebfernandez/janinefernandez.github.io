@@ -1,16 +1,16 @@
 /*lmgc_mobile.css - FOR MOBILE VIEW*/
-@media only screen and (max-width : 510px){
+@media only screen and (max-width : 460px){
 body{
     background:none;
     font-family:'Nunito', sans-serif;
-    margin:0 auto;
+    margin:0;
     padding:0;
     position:relative;
     width:100%;
     height:auto;
     border:1px solid black;
     color:rgb(0,0,0);
-    font-size:15px;
+    font-size:15px;  
 }
      
 a:link, a:visited{
@@ -41,8 +41,7 @@ h3{
 strong{
     font-weight:bold;
 }
-    
-    
+      
 /************************/
 /*********HEADER*********/
 /************************/
@@ -50,7 +49,7 @@ header{
     background-color:rgb(230, 243, 255);
     width:100%;
     height:300px;
-    background:url("../images/header.jpg") no-repeat center;
+    background:url("https://c1.staticflickr.com/3/2044/32950129751_81a0e218a4.jpg") no-repeat center;
     background:cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -93,7 +92,6 @@ header{
     background-color: none;
 }
     
-
     .input_class{
 		margin: 0;
 		padding: 5px 15px;
@@ -105,8 +103,10 @@ header{
 		border-bottom-left-radius: 3px 3px;
         width:88%;
 	}
+    
 	.search_button {
-		margin: 0;
+		margin: 10px 0;
+        width: 100%;
 		padding: 5px 7px;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size:14px;
@@ -123,20 +123,22 @@ header{
 		border-top-right-radius: 5px 5px;
 		border-bottom-right-radius: 5px 5px;
 	}
+    
 	.search_button:hover {
 		text-decoration: none;
 		background: #007ead;
 		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
 		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
 	}
+    
 	/* Fixes submit button height problem in Firefox */
 	.search_button::-moz-focus-inner {
 	  border: 0;
 	}
+    
 	.tfclear{
 		clear:both;
 	}
-
 
 /**LOGO & COURSE NAME**/
 #banner_logo{
@@ -158,6 +160,7 @@ header{
     font-size:30px;
     color:rgb(255,255,255);
 } 
+    
 /************************/
 /***********NAV**********/
 /************************/
@@ -195,7 +198,6 @@ nav ul li a:hover,nav ul li a:active{
     nav{
         display:none;
     }
-    
     
     .dropbtn {
     background-color: black;
@@ -278,11 +280,9 @@ nav ul li a:hover,nav ul li a:active{
         padding:10px 0;
     }
     
-    
     ul#teetimes_second_list{
         display:none;
     }
-    
     
     #book_now{
         text-align: left;
@@ -302,7 +302,6 @@ nav ul li a:hover,nav ul li a:active{
     #book_now a:hover{
         background: -webkit-gradient(linear, left top, left bottom, from(#A0A0A0), to(#CECECE));
     }
-    
     
     #main_content{
         padding-bottom:10px;
@@ -325,7 +324,6 @@ nav ul li a:hover,nav ul li a:active{
         font-size: 18px;
         text-transform: uppercase;
     }
-    
     
     #sidebar_events{
         margin:10px 0;
@@ -362,10 +360,11 @@ nav ul li a:hover,nav ul li a:active{
         width:100%;
         height:1800px;
     }
-     sections#front_img{
+    
+     section#front_img{
         margin-bottom: 70px;
     }
-	
+    
     #adventures{ 
         margin-top:20px;
         width:96%;
@@ -411,6 +410,7 @@ nav ul li a:hover,nav ul li a:active{
     margin:0 auto;
     text-align:center;
 }
+    
 #course_map img{
     width:95%;
     margin-bottom:10px;
@@ -484,7 +484,6 @@ button.w3-button.demo.thumbnails{
     width:100%;
     }
     
-  
 /************************/
 /*********EVENTS*********/
 /************************/
@@ -495,13 +494,13 @@ button.w3-button.demo.thumbnails{
 }
 
 #tournament_list{
-    padding:10px 0;
+    display:none;
 }
 
 #tournaments li, #tournament_list li{
     display:inline-block;
     padding:5px;
-    min-width:230px;
+    min-width: 45%;
     text-align:center;
 }
 
@@ -530,19 +529,17 @@ button.w3-button.demo.thumbnails{
         background: -webkit-gradient(linear, left top, left bottom, from(#DFBE85), to(#CF9C42));
     }
     
-
 #tournaments p{
     padding:3px 0;
     text-align:center;
     font-size:12px;
 }
 
-
     /*EVENT HANDLER*/
     .description2{
             display:none;
             color:white;
-            width:97.9%;
+            width:94.5%;
             background: -webkit-gradient(linear, left top, left bottom, from(#7A7A7A), to(#494949));
         }
     
@@ -553,32 +550,28 @@ button.w3-button.demo.thumbnails{
     /*EVENT HANDLER ENDS*/
     
 #events{
-    width:auto;
+    width:100%;
     height:auto;
     overflow:hidden;
-    padding:10px;
+    margin-left:-5px;
 }
     
 #events h1{
-    background-color: rgba(255,255,255,.8);
-    width: 90px;
-    padding: 5px;
-    margin-top:35px;
-    position: absolute;
+    background-color: rgba(255,255,255,.5);
+    width: 20%;
 }
     
 #events img{
-    width:550px;
+    width:95%;
+    padding:0;
+    margin:0;
 }
 
 #events_list{
-    width: auto;
+    width: 100%;
     height: auto;
-    float: right;
     background-color: rgba(230, 243, 255,.9);
-    padding-left:10px;
-    position: relative;
-    margin-top: -376px;
+    margin: 10px 0;
     border-radius:10px;
 }
 
@@ -587,14 +580,28 @@ button.w3-button.demo.thumbnails{
     
 }
 
+#events_list ul{
+    display:inline-block;
+}
+    
 #events li{
     display:inline-block;
-    width:250px;
+    width:370px;
 }
 
 #events .fa{
     width:20px;
 }
+    
+    /*MOBILE ONLY*/
+    .events_right{
+        float:right;
+    }
+    
+    #popup_mobile_info{
+        margin:10px 0;
+        text-align:center;
+    }
 
 /*POPUP INFORMATION*/
 /* Popup container - can be anything you want */
@@ -606,7 +613,6 @@ button.w3-button.demo.thumbnails{
     position: absolute;
     padding:5px;
 }*/
-
 
 .popup{
     position: relative;
@@ -633,11 +639,8 @@ button.w3-button.demo.thumbnails{
     left: 450px;*/
     /*margin: -5px 0 0 350px;*/
     margin: 330px 0 0 -20px;
-
 }
-
-
-    
+ 
 .popup .show{
     visibility: visible;
     -webkit-animation: fadeIn 1s;
@@ -655,16 +658,17 @@ button.w3-button.demo.thumbnails{
     to {opacity:1 ;}
 }    
 
-
+#popup_mobile_info{
+   visibility:visible;
+}
+    
 /************************/
 /*******MEMBERSHIP*******/
 /************************/
 #credentials{
-    width:480px;
+    width:auto;
     height:auto;
     float:right;
-    padding:5px;
-    margin:10px;
     overflow:hidden;
 }
 
@@ -687,13 +691,13 @@ button.w3-button.demo.thumbnails{
 }
 
 #benefits{
-    width:350px;
+    display:block;
+    width:100%;
     height:230px;
     background:url('../images/combo-3.jpg') no-repeat;
     background-color:rgba(232, 195, 132,.9);
     background-blend-mode:screen;
     background-size:100%;
-    margin:90px 70px 0 70px;
 }
     
 #benefits h3{
@@ -704,13 +708,18 @@ button.w3-button.demo.thumbnails{
     color:white;
 }
     
+    /*TABLET ONLY*/
+    #benefits-mobile-info{
+        display:none;
+    }
+    
 #details{
     font-size: 20px;
-    margin-top: 125px;
+    margin-top: 25px;
     line-height:25px;
     border-top:1px solid black;
-    width:490px;
-    }
+    width:auto;
+}
 
 #img_details ul li{
     display:inline-block;
@@ -718,8 +727,9 @@ button.w3-button.demo.thumbnails{
 }
 
 #img_details img{
-    width: 210px;
-    height: 135px;
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
     border-bottom-left-radius: 0px;
 }
 
@@ -765,16 +775,17 @@ button {
 #sign_up{
     border:1px solid rgb(0,0,0);
     padding:5px;
-    height:320px;
+    height:360px;
     background-color:rgba(50,150,250,.5);
     box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .2), inset -1px -1px 1px rgba(0, 0, 0, .2);
 }
+    
 /************************/
 /********TEETIMES********/
 /************************/
 #search_teetimes{
     width:100%;
-    height:45px;
+    height:105px;
     background-color:grey;
     margin-bottom:10px;
     border-radius:5px;
@@ -782,7 +793,7 @@ button {
 
 .input_teetime{
     line-height:20px;
-    width:305px;
+    width:99%;
 	margin: 0;
 	padding: 5px 15px;
     background-color:rgba(255,255,255,.9);
@@ -806,7 +817,15 @@ button {
     background: -webkit-gradient(linear, left top, left bottom, from(#CF9C42), to(#DFBE85));
 }
 
-
+    /*MOBILE LAYOUT ONLY*/
+    #mobile_days{
+        display:none;
+    }
+    
+    #mobile_teetimes{
+        width:100%;
+    }
+    
 #teetimes_selections ol li{
     margin:0 70px;
     display:inline-block;
@@ -818,16 +837,16 @@ button {
 
 #teetimes_selections ul{
     display:inline-block;
-    margin:10px 12px;
-
+    margin:5px 0;
 }
+    
 .tee_times{
-    padding:8px;
+    padding:10px 0;
     text-align:center;
     background-color:rgb(115,115,115);
     color:rgb(255,255,255);
-    width:150px;
-    height:200px;
+    width:100%;
+    height:auto;
     border:.5px solid rgb(0,0,0);
     box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
     
@@ -845,17 +864,16 @@ button {
 }
 
 #booking_time{
-    font-size:35px;
-    font-weight:100;
-    margin:30px 0 7px -5px;
-    width:160px;
-    padding:15px 0;
+    font-size: 35px;
+    font-weight: 100;
+    margin: 5px 0;
+    width: 100%;
+    padding: 5px 0;
 }
-
 
 #price{
     font-size:15px;
-    margin-top:50px;
+    margin-top:10px;
 }
 
 #call_now{
@@ -867,16 +885,16 @@ button {
 /*TEETIME POPUP*/
 #popup{
     display:none;
-    width:160px;
+    width:auto;
     background-color:#555;
     color:#E8C384;
     text-align:center;
     border-radius:6px;
-    padding:8px 0;
+    padding:5px 5;
     position:absolute;
     z-index:1;
-    bottom:25%;
-    left:50%;
+    bottom:30%;
+    left:55%;
     margin-left:-80px;
 }
 
@@ -892,27 +910,25 @@ button {
     padding-bottom:30px;
 }
 
-
 #proshop_img{
-    float:right;
     padding:0 0 20px 15px;
     text-align:right;
-    width:470px;
+    width:100%;
     position:relative;
 }
+    
 #proshop_info img{
     width: 100%;
     height: auto;
-    margin-top: 56px;
+    margin-top: 0;
 }
 
 #image_contact{
     position: absolute;
-    margin-top: -189px;
+    margin-top: -300px;
     right:0;
     background-color:rgba(255,255,255,.8);
     }
-    
     
 #merch, #img_details{
     background-color:rgba(0,0,0,.7);
@@ -936,6 +952,7 @@ button {
 }
     
 #proshop_img button{
+    width:100%;
     margin-top:20px;
     background-color:rgb(201, 171, 126);
     font-size:15px;
@@ -961,7 +978,7 @@ button {
         .article.current, .article{
             background-color:rgba(201, 171, 126, .5);
             margin-left:0;
-            width:480px;
+            width:100%;
             height:auto;
         }
             
@@ -989,7 +1006,7 @@ button {
             display:none;
             background-color:black;
             color:white;
-            width:460px;
+            width:95%;
         }
     
         .description1 p{
@@ -1000,17 +1017,16 @@ button {
 /********CONTACTS********/
 /************************/
 #contact_wrapper{
-    float:right;
+    float:none;
     position:relative;
 }
 
-
 #contact_form{
-    width:480px;
+    width:100%;
     height:auto;
     background-color:rgba(50,150,250,.5);
     padding:10px;
-    margin-top:90px;
+    margin-top:10px;
     overflow:hidden;
 }
 
@@ -1031,18 +1047,24 @@ button {
     height:150px;
 }
 
-#google_map{
+#google_map_mobile{
+    display:block;
     background-color:rgba(50,150,250,.5);
-    width:480px;
-    height:400px;
-    padding:10px;
+    width:102.8%;
+    height:auto;
+    padding:5px;
     
 }
+    
+    /*TABLET & MOBILE ONLY*/
+    #google_map, #google_map_tablet{
+        display:none;
+    }
 
 #staff{
-    width:450px;
+    width:100%;
     height:auto;
-    padding:20px;
+    padding:0;
     overflow:hidden;
 }
     
@@ -1051,7 +1073,6 @@ button {
         padding:15px 0;
         overflow:hidden;
     }
-
 
 #staff ul li img {
     height:80px;
@@ -1074,6 +1095,7 @@ button {
         margin-bottom:10px;
         width:165px;
     }
+    
 #inquiry_text{
     margin-top:65px;
 }
@@ -1081,7 +1103,6 @@ button {
 #inquiry_text p{
     margin:5px 0;
 }
-    
     
 #inquiries_text{
     background-color:black;
@@ -1109,8 +1130,7 @@ footer{
     margin:0 auto;
     width:99%;
     height:300px;
-    padding-bottom:30px;
-    
+    padding-bottom:30px; 
 }
 
 .footer_content{
@@ -1154,13 +1174,6 @@ footer{
     font-size: 10px;
     bottom:0;
 }
-    
-    
-    
-   
-    
-    
-    
     
     
 }/*@MEDIA ENDS*/
