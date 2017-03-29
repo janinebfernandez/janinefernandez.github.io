@@ -600,6 +600,7 @@ strong{
 
         /*TABLET ONLY*/
         #benefits-mobile-info{
+            display:block;
             text-align: center;
         }
 
