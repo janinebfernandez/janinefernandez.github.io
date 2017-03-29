@@ -1,8 +1,7 @@
 <!-----Lake Miramar Golf Course -- PROSHOP.html Page------>
 <html>
-    
 <head>
-    <title>LMGC Course</title>
+    <title>LMGC Teetimes</title>
     <!--Sets viewport to device's native width at 100%.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -18,152 +17,237 @@
     
     <link rel="stylesheet" type="text/css" media="only screen and (max-width: 460px)" href="../css/lmgc_mobile.css" />
     
-    <!--Font Awesome Stylesheet-->
+    <!--Font Awesome Files-->
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/lib/w3.css">
     
     <!--Javascript Stylesheets-->
     <script src="../js/jquery.js"></script>
     <script src="../js/includes.js"></script>
-    <!--<script src="../js/content.js"></script>-->
+    <script src="../js/content.js"></script>
 </head>
 
-
-<body>  
+    
+<body>
 <!--------------------HEAD STARTS----------------------->
-<!--Pulls Header Content File-->
 <div id="headerContent"></div>
 <!---------------------HEAD ENDS------------------------>
 
 <!-----------------------SECTION------------------------>
 <div id="index_wrapper">
-    <h1>Course</h1>
-    <div id="course_map">
-        <img src="../images/lmgc_course_map.jpg" alt="Course Map">
-        <a href="../images/scorecard.jpg" target="_blank">SCORECARD</a>
+    <h1>Tee Times</h1>
+    <div id="search_teetimes">
+        		<form id="tfnewsearch" method="get" action="http://www.google.com">
+                    
+                <!--Tee Time-->
+		        <input type="text" id="input_teetime" class="input_teetime" name="q" placeholder="Tee Times" size="21" maxlength="120" value="">
+                    
+                <!--# Players-->
+                <input type="text" id="input_date" class="input_teetime" name="q" size="21" maxlength="120" placeholder="Players" value="">
+                
+                <!--Date-->
+                <input type="text" id="input_date" class="input_teetime" name="q" size="21" maxlength="120" placeholder="MM/DD/YY" value="">    
+                <input type="submit" value="Search" class="search_button_teetime">
+		        </form>
+            <div class="tfclear"></div>
     </div>
 
-<!--SLIDESHOW CONTENT-->
-<div class="w3-container">
-<div class="w3-center">
-  <div class="w3-section">
-    <button class="w3-button nav-button" onclick="plusDivs(-1)">Prev</button>
-      <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-      <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-      <button class="w3-button demo" onclick="currentDiv(3)">3</button>
-      <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
-      <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
-      <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
-      <button class="w3-button demo" onclick="currentDiv(7)">7</button> 
-      <button class="w3-button demo" onclick="currentDiv(8)">8</button> 
-      <button class="w3-button demo" onclick="currentDiv(9)">9</button>
-    <button class="w3-button nav-button" onclick="plusDivs(1)">Next</button>
-    </div>
-</div>
+    <button id="reserve_now">Reserve Now!</button>
     
-<!--COURSE CONTENT-->
-<div class="w3-content w3-content-mobile">
-    <div class="mySlides">
-        <img class="mySlides-1 large_slide" src="../images/holes/hole_1.jpg">
-        <div class="caption"><h2>Hole 1</h2><p>Start the course with an easy hole. This is our widest green and one of the shortest. It may be an easy shot but don't get distacted by the crowd waiting for some good play.</p></div>
+    <div id="teetimes_selections">
+        <ol id="mobile_days">
+            <li><h3>MON</h3></li>
+            <li><h3>TUE</h3></li>
+            <li><h3>WED</h3></li>
+            <li><h3>THU</h3></li>
+            <li><h3>FRI</h3></li>
+        </ol>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 27</p>
+                <p id="booking_time">7:05am</p>
+                <p class="month_players_discount">1 - 6 Players</p>
+                <p id="price">$49.00</p>
+                <p class="month_players_discount">Member Discount</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 28</p>
+                <p id="booking_time">7:05am</p>
+                <p class="month_players_discount">1 - 6 Players</p>
+                <p id="price">$49.00</p>
+                <p class="month_players_discount">Member Discount</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 29</p>
+                <p id="booking_time">7:05am</p>
+                <p class="month_players_discount">1 - 6 Players</p>
+                <p id="price">$49.00</p>
+                <p class="month_players_discount">Member Discount</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 30</p>
+                <p id="booking_time">7:05am</p>
+                <p class="month_players_discount">1 - 6 Players</p>
+                <p id="price">$49.00</p>
+                <p class="month_players_discount">Member Discount</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 31</p>
+                <p id="booking_time">6:45am</p>
+                <p class="month_players_discount">1 - 4 Players</p>
+                <p id="price">$69.00</p>
+                <p class="month_players_discount">Popular Hour</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 27</p>
+                <p id="booking_time">11:00am</p>
+                <p class="month_players_discount">1 - 6 Players</p>
+                <p id="price">$79.00</p>
+                <p class="month_players_discount">4+ Member Discount</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 28</p>
+                <p id="booking_time">10:00am</p>
+                <p class="month_players_discount">1 - 6 Players</p>
+                <p id="price">$79.00</p>
+                <p class="month_players_discount">+4 Member Discount</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 29</p>
+                <p id="booking_time">10:00am</p>
+                <p class="month_players_discount">1 - 6 Players</p>
+                <p id="price">$79.00</p>
+                <p class="month_players_discount">4+ Member Discount</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 30</p>
+                <p id="booking_time">10:00am</p>
+                <p class="month_players_discount">1 - 6 Players</p>
+                <p id="price">$79.00</p>
+                <p class="month_players_discount">4+ Member Discount</p>
+                </div>
+            </ul>
+                <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 31</p>
+                <p id="booking_time">9:45am</p>
+                <p class="month_players_discount">1 - 4 Players</p>
+                <p id="price">$99.00</p>
+                <p class="month_players_discount">Popular Hour</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 27</p>
+                <p id="booking_time">1:10pm</p>
+                <p class="month_players_discount">1 - 4 Players</p>
+                <p id="price">$99.00</p>
+                <p class="month_players_discount">Popular Hour</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 28</p>
+                <p id="booking_time">1:10pm</p>
+                <p class="month_players_discount">1 - 4 Players</p>
+                <p id="price">$99.00</p>
+                <p class="month_players_discount">Popular Hour</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 29</p>
+                <p id="booking_time">1:10pm</p>
+                <p class="month_players_discount">1 - 4 Players</p>
+                <p id="price">$99.00</p>
+                <p class="month_players_discount">Popular Hour</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 30</p>
+                <p id="booking_time">1:10pm</p>
+                <p class="month_players_discount">1 - 4 Players</p>
+                <p id="price">$99.00</p>
+                <p class="month_players_discount">Popular Hour</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 31</p>
+                <p id="booking_time">12:50pm</p>
+                <p class="month_players_discount">1 - 2 Players</p>
+                <p id="price">$119.00</p>
+                <p class="month_players_discount">Popular Hour</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 27</p>
+                <p id="booking_time">3:30pm</p>
+                <p class="month_players_discount">1 - 4 Players</p>
+                <p id="price">$120.00</p>
+                <p class="month_players_discount">Keep in Pace</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 28</p>
+                <p id="booking_time">3:30pm</p>
+                <p class="month_players_discount">1 - 4 Players</p>
+                <p id="price">$120.00</p>
+                <p class="month_players_discount">Keep in Pace</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 29</p>
+                <p id="booking_time">3:30pm</p>
+                <p class="month_players_discount">1 - 4 Players</p>
+                <p id="price">$120.00</p>
+                <p class="month_players_discount">Keep in Pace</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 30</p>
+                <p id="booking_time">3:10pm</p>
+                <p class="month_players_discount">1 - 4 Players</p>
+                <p id="price">$120.00</p>
+                <p class="month_players_discount">Keep in Pace</p>
+                </div>
+            </ul>
+            <ul id="mobile_teetimes"><div class="tee_times">
+                <p id="popup">Thank you for Reserving!</p>
+                <p class="month_players_discount">March 31</p>
+                <p id="booking_time">3:50pm</p>
+                <p class="month_players_discount">1 - 2 Players</p>
+                <p id="price">$149.99</p>
+                <p class="month_players_discount">Keep in Pace</p>
+                </div>
+            </ul>
     </div>
-    <div class="mySlides">
-        <img class="mySlides-1 large_slide" src="../images/holes/hole_2.jpg">
-        <div class="caption"><h2>Hole 2</h2><p>After an easy is one of our hardest green. This is the longest green with 575 for our longest tee. Aim straight and avoid the breeze if you want to make this one!</p></div>
-    </div>
-    <div class="mySlides">
-        <img class="mySlides-1 large_slide" src="../images/holes/hole_3.jpg">
-        <div class="caption"><h2>Hole 3</h2><p>This green is played like a mini course. Create an angled shot and make sure to hit strong enough for the ball to pass the incline. Hit too soft and the ball might just come back to where it started.</p></div>
-    </div>
-    <div class="mySlides">
-        <img class="mySlides-1 large_slide" src="../images/holes/hole_4.jpg">
-        <div class="caption"><h2>Hole 4</h2><p>Curve the shot! This green is very tricky. Angle your shot carefully or else you'll find yourself on a bunker!</p></div>
-    </div>
-    <div class="mySlides">
-        <img class="mySlides-1 large_slide" src="../images/holes/hole_5.jpg">
-        <div class="caption"><h2>Hole 5</h2><p>This is our second longest tee. All you have to do is aim straight but be very careful with the wind. You are up on a hit with this shot and anything can happen.</p></div>
-    </div>
-    <div class="mySlides">
-        <img class="mySlides-1 large_slide" src="../images/holes/hole_6.jpg">
-        <div class="caption"><h2>Hole 6</h2><p>A simple tee but watch out for that curve.</p></div>
-    </div>
-    <div class="mySlides">
-        <img class="mySlides-1 large_slide" src="../images/holes/hole_7.jpg">
-        <div class="caption"><h2>Hole 7</h2><p>This is our shortest tee. Aim straight and hit lightly and your on your way to the hole!</p></div>
-    </div>
-    <div class="mySlides">
-        <img class="mySlides-1 large_slide" src="../images/holes/hole_8.jpg">
-        <div class="caption"><h2>Hole 8</h2><p>Very similar to our fourth tee but much more narrow. Becareful you dont hit people that are jogging.</p></div>
-    </div>
-    <div class="mySlides">
-        <img class="mySlides-1 large_slide" src="../images/holes/hole_9.jpg">
-        <div class="caption"><h2>Hole 9</h2><p>Finish string with our easiest tee! Short and sweet hit should take the ball home.</p></div>
-    </div>
-</div>
-
-<!--Javascript Slideshow-->
-  <div class="w3-section">  
-      <button class="w3-button demo thumbnails" onclick="currentDiv(1)"> 
-        <img class="mySlides-2" src="../images/holes/hole_1.jpg"></button> 
-      <button class="w3-button demo thumbnails" onclick="currentDiv(2)">
-        <img class="mySlides-2" src="../images/holes/hole_2.jpg"></button> 
-      <button class="w3-button demo thumbnails" onclick="currentDiv(3)">
-        <img class="mySlides-2" src="../images/holes/hole_3.jpg"></button>
-      <button class="w3-button demo thumbnails" onclick="currentDiv(4)">
-        <img class="mySlides-2" src="../images/holes/hole_4.jpg"></button> 
-      <button class="w3-button demo thumbnails" onclick="currentDiv(5)">
-        <img class="mySlides-2" src="../images/holes/hole_5.jpg"></button> 
-      <button class="w3-button demo thumbnails" onclick="currentDiv(6)">
-        <img class="mySlides-2" src="../images/holes/hole_6.jpg"></button> 
-      <button class="w3-button demo thumbnails" onclick="currentDiv(7)">
-        <img class="mySlides-2" src="../images/holes/hole_7.jpg"></button> 
-      <button class="w3-button demo thumbnails" onclick="currentDiv(8)">
-        <img class="mySlides-2" src="../images/holes/hole_8.jpg"></button> 
-      <button class="w3-button demo thumbnails" onclick="currentDiv(9)">
-        <img class="mySlides-2" src="../images/holes/hole_9.jpg"></button>
-    </div>
-</div><!--SLIDESHOW CONTAINER ENDS-->
-    
-      
-
-<!--JAVASCRIPT FOR INDIVIDUAL HOLE SLIDER-->
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-red", "");
-      }
-      x[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " w3-red";
-    }
-</script> 
-    
-    
-
-</div><!--INDEX_WRAPPER ENDS-->  
+    <p id="call_now"> Call <strong>(858) 531 - 0000 </strong>or <strong>Reserve Online </strong>Now!
+</div><!--INDEX_WRAPPER ENDS-->
 <!--------------------SECTION  ENDS--------------------->
 
 
 <!-------------------FOOTER STARTS---------------------->
-<!--Pulls footer content file-->
 <div id="footerContent"></div>
 <!--------------------FOOTER ENDS----------------------->
 
