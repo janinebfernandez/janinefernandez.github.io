@@ -1154,7 +1154,7 @@ strong{
     #footer_wrapper{
         margin:0 auto;
         width:99%;
-        height:300px;
+        height:auto;
         padding: 0 0 30px 0;
     }
 
@@ -1194,7 +1194,7 @@ strong{
         width: 100%;
         padding: 5px;
         height: 20px;
-        position: absolute;
+        position: relative;
         text-align: center;
         font-size: 10px;
         bottom:0;
