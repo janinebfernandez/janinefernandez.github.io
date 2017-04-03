@@ -252,9 +252,8 @@ strong{
 /************************/
     #index_wrapper{
         background-color:rgb(230, 243, 255);
-        background-color:pink;
+        /*background-color:pink;*/
         width:100%;
-        /*width:95%;*/
         margin:0 auto;
         padding:5px;
         overflow:hidden;
