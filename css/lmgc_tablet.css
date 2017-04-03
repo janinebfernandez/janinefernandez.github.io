@@ -607,7 +607,7 @@ strong{
         #benefits-mobile{
             width: 220px;
             height: 145px;
-            background: url(https://c1.staticflickr.com/4/3790/32884217604_e794b27699.jpg) no-repeat;
+            background: url('https://c1.staticflickr.com/4/3790/32884217604_e794b27699.jpg') no-repeat;
             background-color: rgba(232, 195, 132,.9);
             background-blend-mode: screen;
             background-size: 100%;
