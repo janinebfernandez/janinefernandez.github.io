@@ -621,7 +621,7 @@ header{
 
     /*SIGN IN*/
     #sign_in{
-        background-color:rgba(50,150,250,.5);
+        background-color:rgba(153,204,255,.9);
         height:235px;
         padding-bottom:20px;
         border:1px solid rgb(0,0,0);
@@ -662,7 +662,7 @@ header{
         border:1px solid rgb(0,0,0);
         padding:5px;
         height:320px;
-        background-color:rgba(50,150,250,.5);
+        background-color:rgba(153,204,255,.9);
         box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .2), inset -1px -1px 1px rgba(0, 0, 0, .2);
     }
     
@@ -902,7 +902,7 @@ header{
     #contact_form{
         width:480px;
         height:auto;
-        background-color:rgba(50,150,250,.5);
+        background-color:rgba(153,204,255,.9);
         padding:10px;
         margin-top:90px;
         overflow:hidden;
