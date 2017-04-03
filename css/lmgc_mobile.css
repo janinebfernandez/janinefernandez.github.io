@@ -285,6 +285,10 @@ strong{
         display:none;
     }
 
+    .teetimes_link{
+        font-size: 11px;
+    }
+    
     #book_now{
         text-align: left;
         margin-top:20px;
@@ -305,9 +309,9 @@ strong{
     }
 
     #main_content{
-        padding-bottom:10px;
+        padding-bottom:30px;
         width:70%;
-        height:600px;
+        /*height:600px;*/
     } 
 
     #main_content img{
