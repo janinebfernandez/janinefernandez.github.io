@@ -330,8 +330,10 @@ header{
 }
 
 #subject_content{
-    width:705px;
-    float:right;
+    width: 705px;
+    float: right;
+    box-shadow: 1px 1px 5px #000;
+    margin-right: -5px;
 }
 
     #subject_link{
@@ -405,7 +407,7 @@ header{
 
         .w3-center{
             background-color: beige;
-            width:700px;
+            width:705px;
             height:433px;
         }
     
@@ -460,15 +462,6 @@ header{
 
 #subject_description h3{
     padding-bottom:50px;
-}
-
-#subject_description p{
-    
-}
-
-#subject_content,#subject_description{
-    height:100px;
-    height:100%;
 }
 
 #page_nav_container{
