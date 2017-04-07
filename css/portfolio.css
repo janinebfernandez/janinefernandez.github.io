@@ -123,6 +123,11 @@ header{
 }
 
 /*TRIANGLE BACK BUTTON*/
+    div#back_button {
+    width: 1000px;
+    margin: 0 auto;
+    }
+
     .tri_button {
         width: 0;
         height: 0;
@@ -130,8 +135,10 @@ header{
         border-right: 15px solid rgb(205,92,92);
         border-bottom: 8px solid transparent;
         position: absolute;
+        float: left;
         margin-left: -20px;
     }
+
         .tri_button:hover{
             border-right-color:red;
         }
@@ -316,8 +323,9 @@ header{
 #content_subject_container{
     background-color:gainsboro;
     padding:5px 0;
-    width:100%;
+    width:960px;
     height:433px;
+    margin:0 auto;
 }
 
 #subject_content{
