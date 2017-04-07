@@ -64,6 +64,10 @@ header{
     padding:10px;
 }
 
+#social_media{
+    padding-top:10px;
+}
+
 #social_media ul li{
     display:inline-block;
     text-align:center;
