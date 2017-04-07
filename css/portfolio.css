@@ -145,8 +145,9 @@ header{
 
     #back_button_subject{
         width: 50px;
-        margin-left: 185px;
         margin-top: 3px;
+        float: right;
+        margin-right: 1.5em;
     }
 
     .tri_button_subject {
