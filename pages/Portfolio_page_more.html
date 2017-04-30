@@ -1,0 +1,517 @@
+<!--Janine Fernandez Portfolio_page_other.html-->
+<html>
+<head>
+    <title>Other Work - JF</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    
+    <!--Stylesheet-->
+    <link href="../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../css/portfolio.css" type="text/css" rel="stylesheet">
+    
+    <!--Responsive Stylesheet-->
+    <link href="../css/portfolio-tablet.css" type="text/css" rel="stylesheet">
+    <link href="../css/portfolio-mobile.css" type="text/css" rel="stylesheet">
+    
+    <!--Javascript-->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/portfolio-2.js"></script>
+    <script src="../js/scroll-button.js"></script>
+    <script src="../js/event-handler.js"></script>
+    <script src="../js/slider_popup.js"></script>  
+    <script src="../js/page-transition.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    
+    
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="../dist/css/animsition.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="../dist/js/animsition.min.js"></script>
+    
+    
+</head>
+  
+    
+<!--CHANGE BACKGROUND FOR EACH PAGE-->
+<body class="web_background">   
+    <!--***mainHeader.html***--> 
+    <div id="pageHeader"></div>
+    <!--*********************-->
+    <div class="page_transition">
+    <!--CONTENT WRAPPER-->
+    <div id="content_wrapper">
+        
+        <!--BACK BUTTON TO OPENING SITE-->
+        <div id="back_button">
+            <a href="../Portfolio.html"><div class="tri_button"></div></a>
+        </div>
+        
+        <!--Container for work link and samples-->
+        <div id="content_subject_container">
+            <div id="subject_content">
+                
+                <!--ONLICK PROJECT SHOWS-->
+                <!--**make sure to change link for link images-->
+                <div id="subject_link">
+                    <div class="w3-center">
+                        <div class="w3-display">
+                            <div class="w3-section">
+                        <!--CHANGE IMAGE LINK IN CSS FILE-->
+                              <button class="w3-button demo" onclick="currentDiv(1)">
+                                  <div class="photo_link more_sample_1 remove_div">
+                                    <div id="div1">
+                                        <h3 class="h3_title">SAMPLE #1</h3>
+                                        <p class="p_title">Work Title #1</p></div></div>
+                                </button> 
+                              <button class="w3-button demo" onclick="currentDiv(2)">
+                                 <div class="photo_link more_sample_2 remove_div">
+                                    <div id="div1">
+                                        <h3 class="h3_title">SAMPLE #2</h3>
+                                        <p class="p_title">Work Title #2</p></div></div>
+                                </button> 
+                              <button class="w3-button demo" onclick="currentDiv(3)">
+                                  <div class="photo_link more_sample_3 remove_div">
+                                    <div id="div1">
+                                        <h3 class="h3_title">SAMPLE #3</h3>
+                                        <p class="p_title">Work Title #3</p></div></div>
+                                </button>
+                              <button class="w3-button demo" onclick="currentDiv(4)">
+                                    <div class="photo_link more_sample_4 remove_div">
+                                        <div id="div1">
+                                            <h3 class="h3_title">SAMPLE #4</h3>
+                                            <p class="p_title">Work Title #4</p></div></div>
+                                </button> 
+                              <button class="w3-button demo" onclick="currentDiv(5)">
+                                    <div class="photo_link more_sample_5 remove_div">
+                                        <div id="div1">
+                                            <h3 class="h3_title">SAMPLE #5</h3>
+                                            <p class="p_title">Work Title #5</p></div></div>
+                                </button> 
+                              <button class="w3-button demo" onclick="currentDiv(6)">
+                                    <div class="photo_link more_sample_6 remove_div">
+                                        <div id="div1">
+                                            <h3 class="h3_title">SAMPLE #6</h3>
+                                            <p class="p_title">Work Title #6</p></div></div>
+                                </button> 
+                            </div><!--w3-section ENDS-->
+                        </div><!--w3-display ENDS-->
+
+    
+                        <!--SUBJECT CONTENT POPUP-->
+                        <div class="w3-content">
+                            <div class="mySlides">
+                                <div class="content_popup">
+                                    <!--Sidebar content appears on the side-->
+                                    <div class="sidebar_content in_left_3s">
+                                        <h1 class="content_title">Lake Miramar Golf Course</h1>
+                                        <p class="content_category">Simple Responsive Design</p>
+                                        <p class="subject_description">Inspired by Lake Miramar</p>
+                                        <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">LMGC Site</a></p>
+                                        <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                                    </div>
+                                    
+                                    <div class="content_body">
+                                        <div class="first-1" id="first-1">
+                                            <h1>LAKE MIRAMAR GOLF COURSE</h1>
+                                            <img src="../samples/lmgc/lmgc_informative.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('second-1'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="second-1" id="second-1">
+                                            <h2>MORE CONTENT INFO HERE</h2>
+                                            <p>CONTENT INFO HERE</p>
+                                            <img src="../samples/lmgc/lmgc_wireframe.jpg">  
+                                            <button type="button" onclick="smoothScroll(document.getElementById('third-1'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="third-1" id="third-1">
+                                            <p>Explanation goes here!</p>
+                                            <img src="../samples/lmgc/lmgc_responsive.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('fourth-1'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="fourth-1" id="fourth-1">
+                                            <p> Change color of the text!</p>
+                                            <img src="../samples/lmgc/lmgc_functionality.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('first-1'))"><p id="last_scroll">TOP</p></button>
+                                        </div>
+                                        
+                                        <!--<div class="black_white"><img src="../samples/photography/black_and_white/IMG_9194.JPG"></div>-->
+                    
+                                    </div><!--content_body ends-->
+                                </div><!--content_popup ends-->
+                            </div>
+                            
+                            <div class="mySlides">
+                                <div class="content_popup">
+                                    <!--Sidebar content appears on the side-->
+                                    <div class="sidebar_content in_left_3s">
+                                        <h1 class="content_title">Espresso Mix</h1>
+                                        <p class="content_category">Infographics Tricks</p>
+                                        <p class="subject_description">Inspired by being a barista.Inspired by being a barista.Inspired by being a barista.</p>
+                                        <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">Espresso Site</a></p>
+                                        <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                                    </div>
+                                    
+                                    <div class="content_body">
+                                    
+                                        <div class="first-2" id="first-2">
+                                            <h1>LAKE MIRAMAR GOLF COURSE</h1>
+                                            <img src="../samples/lmgc/lmgc_informative.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('second-2'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="second-2" id="second-2">
+                                            <h2>MORE CONTENT INFO HERE</h2>
+                                            <p>CONTENT INFO HERE</p>
+                                            <img src="../samples/lmgc/lmgc_wireframe.jpg">  
+                                            <button type="button" onclick="smoothScroll(document.getElementById('third-2'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="third-2" id="third-2">
+                                            <p>Explanation goes here!</p>
+                                            <img src="../samples/lmgc/lmgc_responsive.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('fourth-2'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="fourth-2" id="fourth-2">
+                                            <p> Change color of the text!</p>
+                                            <img src="../samples/lmgc/lmgc_functionality.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('first-2'))"><p id="last_scroll">TOP</p></button>
+                                        </div>
+                                        
+                                        
+                                </div><!--content_body ends-->
+                                </div><!--content_popup ends-->
+                            </div>
+                            <div class="mySlides">
+                                <div class="content_popup">
+                                    <!--Sidebar content appears on the side-->
+                                    <div class="sidebar_content in_left_3s">
+                                        <h1 class="content_title">San Diego View</h1>
+                                        <p class="content_category">HTML,CSS & JS Play</p>
+                                        <p class="subject_description">Top Locations in San Diego!</p>
+                                        <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">The View Site</a></p>
+                                        <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                                    </div>
+                                    
+                                    <div class="content_body">
+                                        <div class="first-3" id="first-3">
+                                            <h1>LAKE MIRAMAR GOLF COURSE</h1>
+                                            <img src="../samples/lmgc/lmgc_informative.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('second-3'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="second-3" id="second-3">
+                                            <h2>MORE CONTENT INFO HERE</h2>
+                                            <p>CONTENT INFO HERE</p>
+                                            <img src="../samples/lmgc/lmgc_wireframe.jpg">  
+                                            <button type="button" onclick="smoothScroll(document.getElementById('third-3'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="third-3" id="third-3">
+                                            <p>Explanation goes here!</p>
+                                            <img src="../samples/lmgc/lmgc_responsive.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('fourth-3'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="fourth-3" id="fourth-3">
+                                            <p> Change color of the text!</p>
+                                            <img src="../samples/lmgc/lmgc_functionality.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('first-3'))"><p id="last_scroll">TOP</p></button>
+                                        </div>
+                                        
+                                </div><!--content_body ends-->
+                                </div><!--content_popup ends-->
+                            </div>
+                            <div class="mySlides">
+                                <div class="content_popup">
+                                    <!--Sidebar content appears on the side-->
+                                    <div class="sidebar_content in_left_3s">
+                                        <h1 class="content_title">Pocky Varieties</h1>
+                                        <p class="content_category">Wordpress</p>
+                                        <p class="subject_description">Explore the world of this all time favorite.</p>
+                                        <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">Pocky Site</a></p>
+                                        <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                                    </div>
+                                    
+                                    <div class="content_body">
+                                    
+                                        <div class="first-4" id="first-4">
+                                            <h1>LAKE MIRAMAR GOLF COURSE</h1>
+                                            <img src="../samples/lmgc/lmgc_informative.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('second-4'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="second-4" id="second-4">
+                                            <h2>MORE CONTENT INFO HERE</h2>
+                                            <p>CONTENT INFO HERE</p>
+                                            <img src="../samples/lmgc/lmgc_wireframe.jpg">  
+                                            <button type="button" onclick="smoothScroll(document.getElementById('third-4'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="third-4" id="third-4">
+                                            <p>Explanation goes here!</p>
+                                            <img src="../samples/lmgc/lmgc_responsive.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('fourth-4'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="fourth-4" id="fourth-4">
+                                            <p> Change color of the text!</p>
+                                            <img src="../samples/lmgc/lmgc_functionality.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('first-4'))"><p id="last_scroll">TOP</p></button>
+                                        </div>
+                                        
+                                </div><!--content_body ends-->
+                                </div><!--content_popup ends-->
+                            </div>
+                            <div class="mySlides">
+                                <div class="content_popup">
+                                    <!--Sidebar content appears on the side-->
+                                    <div class="sidebar_content in_left_3s">
+                                        <h1 class="content_title">Pocky Varieties</h1>
+                                        <p class="content_category">Wordpress</p>
+                                        <p class="subject_description">Explore the world of this all time favorite.</p>
+                                        <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">Pocky Site</a></p>
+                                        <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                                    </div>
+                                    <div class="content_body">
+                                    
+                                        <div class="first-5" id="first-5">
+                                            <h1>LAKE MIRAMAR GOLF COURSE</h1>
+                                            <img src="../samples/lmgc/lmgc_informative.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('second-5'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="second-5" id="second-5">
+                                            <h2>MORE CONTENT INFO HERE</h2>
+                                            <p>CONTENT INFO HERE</p>
+                                            <img src="../samples/lmgc/lmgc_wireframe.jpg">  
+                                            <button type="button" onclick="smoothScroll(document.getElementById('third-5'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="third-5" id="third-5">
+                                            <p>Explanation goes here!</p>
+                                            <img src="../samples/lmgc/lmgc_responsive.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('fourth-5'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="fourth-5" id="fourth-5">
+                                            <p> Change color of the text!</p>
+                                            <img src="../samples/lmgc/lmgc_functionality.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('first-5'))"><p id="last_scroll">TOP</p></button>
+                                        </div>
+                                        
+                                        
+                                </div><!--content_body ends-->
+                                </div><!--content_popup ends-->
+                            </div>
+                            <div class="mySlides">
+                                <div class="content_popup">
+                                    <!--Sidebar content appears on the side-->
+                                    <div class="sidebar_content in_left_3s">
+                                        <h1 class="content_title">Pocky Varieties</h1>
+                                        <p class="content_category">Wordpress</p>
+                                        <p class="subject_description">Explore the world of this all time favorite.</p>
+                                        <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">Pocky Site</a></p>
+                                        <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                                    </div>
+                                    <div class="content_body">
+                                    
+                                        <div class="first-6" id="first-6">
+                                            <h1>LAKE MIRAMAR GOLF COURSE</h1>
+                                            <img src="../samples/lmgc/lmgc_informative.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('second-6'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="second-6" id="second-6">
+                                            <h2>MORE CONTENT INFO HERE</h2>
+                                            <p>CONTENT INFO HERE</p>
+                                            <img src="../samples/lmgc/lmgc_wireframe.jpg">  
+                                            <button type="button" onclick="smoothScroll(document.getElementById('third-6'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="third-6" id="third-6">
+                                            <p>Explanation goes here!</p>
+                                            <img src="../samples/lmgc/lmgc_responsive.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('fourth-6'))"><div class="arrow-down"></div></button>
+                                        </div>
+                                        
+                                        <div class="fourth-6" id="fourth-6">
+                                            <p> Change color of the text!</p>
+                                            <img src="../samples/lmgc/lmgc_functionality.jpg">
+                                            <button type="button" onclick="smoothScroll(document.getElementById('first-6'))"><p id="last_scroll">TOP</p></button>
+                                        </div>
+                                        
+                                        
+                                </div><!--content_body ends-->
+                                </div><!--content_popup ends-->
+                            </div>
+                            
+                        
+                        </div><!--w3-content ENDS-->
+                    </div><!--w3-center CONTENT SLIDER ENDS-->
+       
+            </div><!--subject_link-->
+            </div><!--SUBJECT CONTENT ENDS-->
+
+            
+            <!--SIDEBAR - PAGE TITLE-->
+            <div id="subject_description">
+                <h1 class="sidebar_title">MORE</h1>
+                <h3>WORK</h3>
+                <p>Discover something new everyday. You'll feel rewarded.</p>
+            </div>
+            
+            
+            <!--BACK BUTTON FOR PROJECT-->
+                <div id="back_button_subject" style="display:none;">
+                    <a href="#" class="active_project"><div class="tri_button_subject"></div>PROJECTS</a>
+                </div><!--project button ends-->
+                
+            
+            
+            
+            <!--MOBILE ONLY-->
+            <div class="mobile_content"> 
+                <div class="articles container">
+                    <div class="article current">
+                       <div class="item row">
+                                <h2 class="source">SIMPLE DESIGN LAYOUT</h2>
+                                <p class="title">Lake Miramar Golf Course</p>
+                                <p class="pubdate">Inspired by Lake Miramar.</p>
+                                <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">LMGC Site</a></p>
+                                <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                                
+                        </div>
+                        <div class="description row">
+                            <div class="sample_content">
+                                <img src="../samples/lmgc/lmgc_informative.jpg">            
+                                <img src="../samples/lmgc/lmgc_wireframe.jpg">
+                                <img src="../samples/lmgc/lmgc_responsive.jpg">            
+                                <img src="../samples/lmgc/lmgc_functionality.jpg">
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="article current">
+                       <div class="item row">
+                                <h2 class="source">INFOGRAPHICS</h2>
+                                <p class="title">Espresso Mix</p>
+                                <p class="pubdate">Informational Design</p>
+                                <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">LMGC Site</a></p>
+                                <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                        </div>
+                        <div class="description row">
+                            <div class="sample_content">
+                                <img src="../samples/lmgc/lmgc_informative.jpg">            
+                                <img src="../samples/lmgc/lmgc_wireframe.jpg">
+                                <img src="../samples/lmgc/lmgc_responsive.jpg">            
+                                <img src="../samples/lmgc/lmgc_functionality.jpg">
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="article current">
+                       <div class="item row">
+                                <h2 class="source">CSS TRICKS</h2>
+                                <p class="title">San Diego Views</p>
+                                <p class="pubdate">Top Locations in San Diego</p>
+                                <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">LMGC Site</a></p>
+                                <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                        </div>
+                        <div class="description row">
+                            <div class="sample_content">
+                                <img src="../samples/lmgc/lmgc_informative.jpg">            
+                                <img src="../samples/lmgc/lmgc_wireframe.jpg">
+                                <img src="../samples/lmgc/lmgc_responsive.jpg">            
+                                <img src="../samples/lmgc/lmgc_functionality.jpg">
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="article current">
+                       <div class="item row">
+                                <h2 class="source">WORDPRESS</h2>
+                                <p class="title">Pocky World</p>
+                                <p class="pubdate">Discover this favorite snack!</p>
+                                <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">LMGC Site</a></p>
+                                <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                        </div>
+                        <div class="description row">
+                            <div class="sample_content">
+                                <img src="../samples/lmgc/lmgc_informative.jpg">            
+                                <img src="../samples/lmgc/lmgc_wireframe.jpg">
+                                <img src="../samples/lmgc/lmgc_responsive.jpg">            
+                                <img src="../samples/lmgc/lmgc_functionality.jpg">
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="article current">
+                       <div class="item row">
+                                <h2 class="source">SAMPLE #5</h2>
+                                <p class="title">Espresso Mix</p>
+                                <p class="pubdate">Informational Design</p>
+                                <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">LMGC Site</a></p>
+                                <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                        </div>
+                        <div class="description row">
+                            <div class="sample_content">
+                                <img src="../samples/lmgc/lmgc_informative.jpg">            
+                                <img src="../samples/lmgc/lmgc_wireframe.jpg">
+                                <img src="../samples/lmgc/lmgc_responsive.jpg">            
+                                <img src="../samples/lmgc/lmgc_functionality.jpg">
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="article current">
+                       <div class="item row">
+                                <h2 class="source">SAMPLE #6</h2>
+                                <p class="title">Espresso Mix</p>
+                                <p class="pubdate">Informational Design</p>
+                                <p id="official_site"><a href="https://janinefernandez.github.io/LMGC.html" target="_blank">LMGC Site</a></p>
+                                <p><a href="#"><img src="" alt="">Zoom File</a></p>
+                        </div>
+                        <div class="description row">
+                            <div class="sample_content">
+                                <img src="../samples/lmgc/lmgc_informative.jpg">            
+                                <img src="../samples/lmgc/lmgc_wireframe.jpg">
+                                <img src="../samples/lmgc/lmgc_responsive.jpg">            
+                                <img src="../samples/lmgc/lmgc_functionality.jpg">
+                            </div>
+                        </div>
+                    </div> 
+            </div><!--ARTICLES ENDS-->
+            </div><!--alternate mobile content ends-->
+        </div> <!--content_block ENDS-->
+            
+        
+        
+        <div id="page_nav_container">
+            <nav id="page_nav">
+                <ul>
+                    <li><a href="Portfolio_page.html" class="animation-link">ABOUT ME</a></li>
+                    <li><a href="Portfolio_page_web.html" class="animation-link">WEB DESIGN</a></li>
+                    
+                    <li><a href="Portfolio_page_graphic.html" class="animation-link">GRAPHIC DESIGN</a></li>
+                    
+                    <li><a href="Portfolio_page_video.html" class="animation-link">VIDEO EDITING</a></li>
+                    <li><a href="Portfolio_page_photo.html" class="animation-link">PHOTOGRAPHY</a></li>
+                    <li><a href="Portfolio_page_more.html" class="animation-link" style="background-color:rgb(205,92,92); color:white; padding:2px 5px; border-radius:2px;">MORE</a></li>
+                </ul>
+            </nav>
+        </div><!--page_nav-container ENDS-->
+        
+        
+       
+    </div><!--CONTENT WRAPPER ENDS-->
+    </div><!--Page TRANSITION ends-->
+    
+    <!--***mainFooter.html***--> 
+    <div id="pageFooter"></div>
+    <!--*********************-->
+  
+   
+    
+</body>
+</html>
