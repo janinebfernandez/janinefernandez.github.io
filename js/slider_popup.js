@@ -1,4 +1,3 @@
-/*slider_popup.js*/
 /*SLIDER CONTENT JS*/
         var slideIndex = 1;
         showDivs(slideIndex);
