@@ -1,4 +1,4 @@
-/*Janine Fernandez Portfolio.css*/
+/*Janine Fernandez Portfolio.css (BROWSER)*/
 html,body{
     margin:0 auto;
     padding:0;
@@ -8,6 +8,7 @@ html,body{
     color:black;
     background-color:white;
     font-family:serif;
+    z-index: -1;
 }
 
 h1{font-size:20px;}
@@ -26,30 +27,43 @@ a:hover, a:active{
     text-decoration:none;
 }
 
-/*SPECIFIED style*/
-.sidebar_title{
-    padding-top:70px;
+
+
+/*PAGE TRANSITION*/
+ @keyframes easeRight { 0% { right:1300px;} 50% {right:0;}}
+        
+        .page_transition{
+            /*opacity:0;  /* make things invisible upon start */
+            animation:easeRight ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+            animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+            animation-duration:1s;
+            animation-delay: 0s;
+            
+            position:absolute;
+            width:100%;
+                
+                
+        }
+
+
+
+/*BACKGROUND IMAGES*/
+
+#main_background{
+   /* background: url("../samples/backgrounds/janine.jpg") no-repeat fixed;
+    background-size:50%;*/
 }
 
-.content_title{
-    float:left;
-}
-
-.content_category{
-    float:right;
-    text-transform:uppercase;
-}
-
-.content_body{
-    background-color:white;
-    margin-top:20px;
-    width:100%;
-    height:413px;
-}
-
-.project_link{
-    margin-top:3px;
-    text-align:right;
+.web_background{
+    /*background: url("../samples/backgrounds/web_background.jpg") no-repeat fixed;*/
+    background-size:100%;
+    /*animation:fadein 2s;*/
+    position:absolute;
+    margin:0;
+    padding:0;
+    height:100%;
 }
 
 
@@ -64,43 +78,288 @@ header{
     padding:10px;
 }
 
-#social_media{
-    padding-top:10px;
-}
+    #social_media{
+        padding-top:10px;
+    }
 
-#social_media ul li{
-    display:inline-block;
+    #social_media ul li{
+        display:inline-block;
+        text-align:center;
+        width:20px;
+        height:20px;
+    }
+
+    .fa{
+        font-size:16px;
+        color:rgb(205,92,92);
+    }
+
+    .fa:hover{
+        color:black;
+    }
+
+    #home{
+        width:120px;
+        float:right;
+    }
+
+    .fa-envelope{
+        float:right;
+        margin-top:7px;
+    }
+
+    /*Mobile Only*/
+        .arrowContact{
+            display:none !important;
+            right:40% !important;
+            margin-top:5px !important;
+        }
+        
+        #mobile-nav{
+            display:none;
+        }
+    
+
+
+    #signature_name{
+        margin-top: 0px;
+        position: relative;
+        width: 90px;
+    }
+
+    #signature_name img{
+        width:100px;
+    }
+
+
+     /*CONTACT FORM*/
+        #contact { 
+          -webkit-user-select: none; /* Chrome/Safari */        
+          -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* IE10+ */
+          cursor: pointer;
+            margin:0 auto;
+            display:block;
+
+        }
+
+        #contactForm { 
+            display: none;
+            background-color: rgba(255,255,255,.7);
+            width: 250px;
+            height: auto;
+            position: absolute;
+            /* margin: 0 auto; */
+            right: 0;
+            top: 50px;
+            padding: 5px;
+            border: 5px solid rgb(245,245,220);
+        }
+
+        #contactForm h3,#contactForm h1,small,#contact_text,#daily_quote{
+            text-align:center;
+        }
+
+        #close{
+            display:block;
+            cursor:pointer;
+            text-align: left;
+            margin-bottom:30px;   
+        }
+
+        #emailTo{
+            background-color: rgba(205,92,92,.7);
+            padding: 5px;
+            border-radius: 2px;
+            color: white;
+            margin: 20px 0 10px 0;
+        }
+
+        #contact_text{margin-bottom:20px;}
+
+        #daily_quote{font-style: italic;color:rgb(205,92,92)}
+
+
+
+
+
+/*SIDEBAR - TITLE AND DESCRIPTION*/
+.sidebar_content{
+        /*background-color: pink;*/
+        color:#000;
+        width: 220px;
+        height: 100px;
+        position: absolute;
+        margin: 325px 0 0 -247px;
+        text-align: right;
+        text-shadow: 1px 1px .5px rgba(0,0,0,.3);
+    }
+
+        /*SAMPLE SIDEBAR in_left @ 3sec*/
+        .in_left_3s{
+            animation-name:in_left;
+            animation-duration:3s;
+        }
+
+        /*SAMPLE SIDEBAR in_left @ 1sec*/
+        .in_left_1s{
+            animation-name:in_left;
+            animation-duration:1s;
+        }
+
+    .sidebar_sample{
+        /*background-color:rgba(255,255,255,.6);*/
+        background-color: rgba(255,255,255,.8);
+        padding:5px;
+    }
+    .sidebar_content a{ color:#000;}
+
+    .sidebar_content a:hover{ color:rgb(205,92,92);}
+
+    .sidebar_title{padding-top:70px;}
+
+    .subject_description{padding-bottom:15px;}
+
+    .content_category{text-transform:uppercase;}
+
+    /*link to Website*/
+    #official_site{
+        margin-bottom:5px;
+        margin-top:0px;
+        font-size:12px;
+    }
+
+    #official_site a,.color_block{
+        background-color:rgb(205,92,92);
+        color:white;
+        padding:3px 5px;
+        border-radius:2px;
+    }
+
+        #official_site a:hover{
+            color:black;
+        }
+
+
+/*CONTENT BODY*/
+.content_body{
+   /* background-color:rgb(245,245,220);*/
+    width:696px;
+    height:433px;
+    overflow: hidden;
     text-align:center;
-    width:20px;
-    height:20px;
+    position:relative;
 }
 
-.fa{
-    font-size:16px;
-    color:rgb(205,92,92);
-}
-
-#home{
-    width:120px;
-    float:right;
-}
-
-.fa-envelope{
-    float:right;
-    margin-top:7px;
-}
-
-#signature_name img{
-    width:100px;
-}
-
-/*FADE IN CONTENT WHEN PAGE IS OPENED*/
-#subject_content, #subject_description p{
-        animation: fadein 3s;
+    .content_body img{
+        width:99%;
+        padding:5px 0 20px 0;
     }
     
+
+    .content_body button{
+        margin-top: -70px;
+        margin-right:0px;
+        background-color:transparent;
+        width:100%;
+        height:40px;
+        border-radius:10px;
+        border:none;    
+    }
+
+        .sidebar_content, .active_project, .sample_show{
+            border-radius:2px;
+        }
+  
+    /*SCROLL DOWN ARROW*/
+    .arrow-down{
+        position:absolute;
+        right:0;
+        cursor:s-resize;
+        margin-right:20px;
+        margin-top:-7px;
+        color:rgba(205,92,92,.7);
+        font-size:30px;
+        border:solid currentColor;
+        border-width: 0 .2em .2em 0;
+        display:inline-block;
+        padding:.20em;
+        transform:rotate(45deg);
+    }
+        
+
+    #last_scroll{
+        background-color:rgba(205,92,92,.5);
+        border-radius: 10px 0 0 10px;
+        color:white;
+        font-size:16px;
+        width:50px;
+        height:25px;
+        position:absolute;
+        right:0; 
+        padding-top:5px;
+        cursor:n-resize;
+    }
+
+    .arrow-down:hover{
+        color:rgb(205,92,92);
+    }
+
+    #last_scroll:hover{
+        background-color:rgba(205,92,92,.8);  
+    }
+
+
+    /*addclass using javascript*/
+    /*CONTENT_BODY LARGE FILES POP UP WINDOW*/
+    .sample_show{
+        background-color: red;
+        width: 960px;
+        height: 600px;
+        margin-left: -262px;
+        margin-top: -30px;
+        z-index:-1;/*places the div container behind the titles*/
+        position:absolute;
+        animation-name:up_top;
+        animation-duration:1s;
+        
+    }
+
+    .fade_out{
+        animation:fadeout 2s;
+    }
+
+        @-webkit-keyframes fadeout {
+        from { opacity: 1; }
+        to   { opacity: 0; }
+        }
+    
+
+
+::-webkit-scrollbar {
+width: 7px;
+height: 0px;
+}
+
+::-webkit-scrollbar-track {
+border: 0px solid black;
+border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+background: rgb(205,92,92);  
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: darkred;  
+}
+
+
+
+/*FADE IN CONTENT WHEN PAGE IS OPENED*/    
     #subject_description h1, #subject_description h3, #back_button_subject{
-        animation: fadein 1s;
+      /*  animation: fadein 1s;*/
     }
     
     @-webkit-keyframes fadein {
@@ -109,12 +368,11 @@ header{
     }
     
 
-
 /******************/
 /******CONTENT*****/
 /******************/
 #content_wrapper{
-    background-color:white;
+    /*background-color:white;*/
     margin:0 auto;
     width:75%;
     height:auto;
@@ -122,11 +380,12 @@ header{
     padding:30px 0;
 }
 
-/*TRIANGLE BACK BUTTON*/
-    div#back_button {
+
+/*TRIANGLE BACK BUTTON to MAIN PAGE*/
+div#back_button {
     width: 1000px;
     margin: 0 auto;
-    }
+}
 
     .tri_button {
         width: 0;
@@ -139,92 +398,153 @@ header{
         margin-left: -20px;
     }
 
-        .tri_button:hover{
-            border-right-color:red;
+    .tri_button:hover{
+        border-right-color:red;
+    }
+
+        /*TRIANGLE BACK BUTTON to CONTENT PAGE*/
+        #back_button_subject{
+            margin-left: 14.5em;
+            margin-top: .5em;
         }
 
-    #back_button_subject{
-        width: 50px;
-        margin-top: 10px;
-        float: right;
-        margin-right: 2em;
-    }
+        .tri_button_subject {
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-right: 10px solid;
+            border-right-color:grey;
+            border-bottom: 5px solid transparent;
 
-    .tri_button_subject {
-        width: 0;
-        height: 0;
-        border-top: 5px solid transparent;
-        border-right: 10px solid;
-        border-right-color:grey;
-        border-bottom: 5px solid transparent;
-        margin-left: -12px;
-    }
+            /*added for large content show block*/
+            position: absolute;
+            margin-left: -12px;
+        }
 
-    .tri_button_subject p {
-        margin-left:14px;
-        margin-top:-5px;
-        font-size:10px;
-    }
-    
-    .inactive_project{
-        display:block;
-    }
+        .tri_button_subject p {
+            margin-left:14px;
+            margin-top:-5px;
+            font-size:10px;
+        }
 
-    .active_project{
-        display:none;
-        margin-left:14px;
-        margin-top:-5px;
-        font-size:10px;
-    }
+        .inactive_project{
+            display:block;
+        }
 
-#content_block{
-    background-color:gainsboro;
+        .active_project{
+            display:none;
+            width: 50px;
+            padding: 5px 5px 5px 5px;
+            margin-left: 8px;
+            margin-top: -10px;
+            font-size: 10px;
+        }
+
+
+/*GREY CONTAINER*/
+#content_block, #main_content_block{
     padding-top:8em;
     padding-bottom:10.25em;
     width:100%;
     height:auto;
+    border-radius:2px;
 }
 
-#quote{
-    font-size:40px;
-}
+    #main_content_block{
+        background-color:rgba(220,220,220,.7);
+    }
 
+    #content_block{
+            background-color:rgb(220,220,220);
+        }
+
+    #quote{font-size:40px;line-height:1;}
+
+
+/*PROFILE PAGE*/
+    #name{
+        font-size:40px;
+        text-shadow: 1px 1px 5px #888;
+    }
+
+    #about_me{
+        padding:20px 0;
+    }
+
+    #profile_text{
+       /* background-color:pink;*/
+        width:470px;
+        height:auto;
+        float:left;
+        padding:5px;
+        line-height:20px;
+    }
+
+    #interest{
+        padding-top:20px;
+        color:rgb(205,92,92);
+    }
+
+    #resume{
+        margin-top:50px;
+        cursor:alias;
+        width:60px;
+        font-size:15px;
+    }
+
+        #resume a{
+            color:white;
+        }
+
+         #resume a:hover{
+            color:black;
+        }
+
+    #profile_photo{
+        background-color:beige;
+        width:180px;
+        height:350px;
+        margin-bottom: 0px;
+        float:right;
+        animation-name:in_right;
+        animation-duration:1s;
+        position:relative;
+        border-radius:2px;
+    }
+
+/*MAIN PAGE NAV*/
 #main_nav ul li, #subject_content ul li{
-    /*background-color:pink;*/
+    background-color:none;
     display:inline-block;
     margin:0px;
-    /*margin:20px 0;*/
-    /*text-align:right;*/
 }
 
-#main_nav{
-    padding-left:35px;
-    margin-top: 50px;
-}
+    #main_nav{
+        padding-left:35px;
+        margin-top: 50px;
+    }
+    
+    #main_nav p{
+        text-align: right;
+        margin: -3px 55px 0 0;
+    }
 
-#main_nav ul{
-   /* margin-left:40px;*/
-}
+    /*MAIN NAV GRAYSCALE FILTER*/
+    .main_photo{
+        filter:grayscale(80%); 
+    }
 
-#nav_text{
-    margin:-10px 90px 0 0;
-}
-#nav_text li{
-    /*background-color:pink;*/
-    padding: 0px;
-    margin: 8px !important;
-    width: 120px;
-    text-align:right;
-}
+    .main_photo:hover{
+        filter:grayscale(0%); 
+    }
 
-/*PARALLELOGRAM NAV IMAGES*/
-    .photo, .photo_link {
+/*PARALLELOGRAM MAIN NAV IMAGES*/
+    .photo {
         transform: skewX(-25deg); 
         -ms-transform: skewX(-25deg); /* IE 9 */
         -webkit-transform: skewX(-25deg); /* Safari and Chrome */
         width: 120px;
         height: 100px;
-        /*border-right: 1px solid black; */
         border-left: 2px solid white; 
 
         /* new styles */
@@ -257,38 +577,8 @@ header{
         .photo_link::before{
             margin-left:-170px !important;
         }
-/*PARALLELOGRAM NAV IMAGES ENDS*/
+    /*PARALLELOGRAM NAV IMAGES ENDS*/
 
-/*HOMEPAGE NAVIGATION LINK*/
-.nav_link{
-    background-color:black;
-    color:white;
-    margin-bottom:.5em;
-    
-    /*parallelogram*/
-    width: 120px;
-    height: 100px;
-    margin: 5px 10px;
-    -webkit-transform: skew(-25deg);
-    -moz-transform: skew(-20deg);
-    -o-transform: skew(20deg);
-    background-image: url("");
-    background-size:150px;
-    color:white;  
-}
-
-.nav_text{
-    padding-right:32px;
-}
-
-/*GRAYSCALE FILTER*/
-    .main_photo{
-        filter:grayscale(80%); 
-    }
-
-    .main_photo:hover{
-        filter:grayscale(0%); 
-    }
 
 /*OVERLAY HOVER TEXT for PAGES/PROJECT LINK*/
 #div1{
@@ -308,6 +598,7 @@ header{
     margin-left:-7px;
     position:relative;
     font-family:serif;
+    text-shadow: 1px 1px 3px #888;
 
 }
 
@@ -319,7 +610,7 @@ header{
 
 
 /******************/
-/*******PAGES******/
+/******CONTENT*****/
 /******************/
 #content_subject_container{
     background-color:gainsboro;
@@ -327,19 +618,29 @@ header{
     width:960px;
     height:433px;
     margin:0 auto;
+    border-radius:2px;
 }
 
-#subject_content{
+#subject_content,#subject_content_aboutme{
     width: 700px;
     float: right;
+    display:block;
 }
 
+    #subject_content_aboutme{
+        position: relative;
+    }
+
     #subject_link{
-        /*background-color:pink;*/
         text-align: left;
     }
 
-/*SUBJECT LINK SLIDESHOW - POPUP*/
+/*MOBILE CONTENT ONLY*/
+.mobile_content{
+    display:none;
+}
+
+/*CONTENT NAV - POPUP*/
     .photo_link{
         cursor:pointer;
         transform: skewX(-25deg);
@@ -374,16 +675,21 @@ header{
         }
 
     /*Subject content pop-up*/
-    .content_popup {
-        background-color: rgb(245,245,220);
+    .content_popup{
+        /*background-color: rgb(245,245,220);*/
         position: absolute;
         margin-top: 0;
         margin-left: 0;
         width: 696px;
         padding: 0 2px;
         height: 433px;
+        margin-top:-100px;
     }
-        
+
+    .content_category{
+        text-align:right;
+    }
+
         .w3-section {
             padding: 50px;
             margin-left: 50px;
@@ -407,11 +713,12 @@ header{
             background-color: beige;
             width:700px;
             height:433px;
+            border-radius: 2px 0 0 2px;
         }
     
-        .mySlides {
+       /* .mySlides {
             display:none;
-        }
+        }*/
 
         .w3-center{
             overflow:hidden;
@@ -438,33 +745,46 @@ header{
             margin:5px;
         }
 
+        /*MOBILE ONLY*/
+        div#page_nav_container {
+            display: block;
+        }
+
+/******************/
+/*CONTENT LAYOUT 2*/
+/******************/
+
+/*DELETE AFTER TEST*/
+.content_body{
+   background-color:rgba(245,245,220,.8);
+    /*display:none;*/
+}
+
+
 
 /*********************/
 /*PAGE SIDEBAR & LINK*/
 /*********************/
 #subject_description{
     width: 200px;
-    height: 350px !important;
+    height: 250px;
     padding: 0 5px;
     background-color: black;
     color: white;
     margin: -5px 0 0 25px;
     box-shadow: 0px 3px 10px #888;
-}
-
-#subject_description img{
-    width: 80%;
-    height: 150px;
-    margin-top: 20px;
-    background-color: pink;
+    border-radius: 0 0 2px 2px;
 }
 
 #subject_description h3{
     padding-bottom:50px;
 }
 
-#page_nav_container{
-    width:100%;
+.content_info {
+    width: 210px;
+    height: 178px;
+    margin-left: 25px;
+    padding-top: 10px;
 }
 
 #page_nav ul li{
@@ -473,6 +793,35 @@ header{
 }
 
 
+
+
+
+
+
+
+
+/*ANIMATIONS*/
+    /*sidebar_content animations*/
+        @keyframes in_left {
+        0%   {left:-1000px;}
+        100%  {left:0px;}
+        }
+
+        @keyframes in_right {
+        0%   {right:-400px;}
+        100%  {right:0px;}
+        }
+    
+    /*Large sample animation*/
+        @keyframes up_top {
+        0%   {top:3500px;}
+        100%  {top:0px;}
+        }
+
+        @keyframes down_bottom {
+            0%   {top:0px;}
+            100%  {top:3500px;}
+        }
 /******************/
 /******PROFILE*****/
 /******************/
@@ -481,50 +830,145 @@ header{
     margin-top:50px;
     padding:10px;
 }
+
+
+.photo_size img{
+    width:90%;
+}
 /******************/
-/********WEB*******/
+/*******MAIN*******/
 /******************/
-/*CUSTOMER LINK IMAGES*/
-/*MOVE THIS CONTENT TO ITS CORRESPONDING PAGE*/
     .about_me::before {
         background-image: url(https://0.soompi.io/wp-content/uploads/2016/11/01062127/BTS-Jungkook.jpg);
     }
 
     .web_design::before {
-        background-image: url(https://0.soompi.io/wp-content/uploads/2016/11/01062127/BTS-Jungkook.jpg);
+        background-image: url(https://c1.staticflickr.com/5/4172/33944409770_fddb9fb3c5_b.jpg);
     }
         
     .graphic_design::before {
-        background-image: url(http://www.sbs.com.au/popasia/sites/sbs.com.au.popasia/files/bts-jimin-6.jpg);
+        background-image: url(https://c1.staticflickr.com/4/3817/32640720434_edb52f8248_b.jpg);
     }
     
     .video_edit::before {
-        background-image: url(https://0.soompi.io/wp-content/uploads/2016/11/01062127/BTS-Jungkook.jpg);
+        background-image: url(https://c1.staticflickr.com/3/2850/34148774801_b53f9544a0_b.jpg);
     }
 
     .photography::before {
-        background-image: url(https://0.soompi.io/wp-content/uploads/2016/11/01062127/BTS-Jungkook.jpg);
+        background-image: url(https://c1.staticflickr.com/3/2830/33469807123_bfa7e5fe73_b.jpg);
     }
         
     .typography::before {
-        background-image: url(http://www.sbs.com.au/popasia/sites/sbs.com.au.popasia/files/bts-jimin-6.jpg);
+        background-image: url(https://c1.staticflickr.com/3/2847/33895831470_f99554c4ab_b.jpg);
+    }
+
+/******************/
+/********WEB*******/
+/******************/
+    .web_sample_1::before {
+        background-image: url(https://c1.staticflickr.com/4/3925/32261499353_88e1f715dc.jpg);
+    }
+    .web_sample_2::before {
+        background-image: url(https://c1.staticflickr.com/4/3925/32261499353_88e1f715dc.jpg);
+    }
+    .web_sample_3::before {
+        background-image: url(https://c1.staticflickr.com/4/3925/32261499353_88e1f715dc.jpg);
+    }
+    .web_sample_4::before {
+        background-image: url(https://c1.staticflickr.com/4/3925/32261499353_88e1f715dc.jpg);
+    }
+    .web_sample_5::before {
+        background-image: url(https://c1.staticflickr.com/4/3925/32261499353_88e1f715dc.jpg);
+    }
+    .web_sample_6::before {
+        background-image: url(https://c1.staticflickr.com/4/3925/32261499353_88e1f715dc.jpg);
     }
 
 /******************/
 /******GRAPHIC*****/
 /******************/
+.graphic_sample_1::before {
+        background-image: url(https://c1.staticflickr.com/3/2950/34122485342_427724b021.jpg);
+    }
+.graphic_sample_2::before {
+        background-image: url(https://c1.staticflickr.com/3/2950/34122485342_427724b021.jpg);
+    }
+.graphic_sample_3::before {
+        background-image: url(https://c1.staticflickr.com/3/2950/34122485342_427724b021.jpg);
+    }
+.graphic_sample_4::before {
+        background-image: url(https://c1.staticflickr.com/3/2950/34122485342_427724b021.jpg);
+    }
+.graphic_sample_5::before {
+        background-image: url(https://c1.staticflickr.com/3/2950/34122485342_427724b021.jpg);
+    }
+.graphic_sample_6::before {
+        background-image: url(https://c1.staticflickr.com/3/2950/34122485342_427724b021.jpg);
+    }
 
 /******************/
 /*******VIDEO******/
 /******************/
-
+.vid_sample_1::before {
+        background-image: url(https://c1.staticflickr.com/3/2820/33895825530_054008ec67.jpg);
+    }
+.vid_sample_2::before {
+        background-image: url(https://c1.staticflickr.com/3/2820/33895825530_054008ec67.jpg);
+    }
+.vid_sample_3::before {
+        background-image: url(https://c1.staticflickr.com/3/2820/33895825530_054008ec67.jpg);
+    }
+.vid_sample_4::before {
+        background-image: url(https://c1.staticflickr.com/3/2820/33895825530_054008ec67.jpg);
+    }
+.vid_sample_5::before {
+        background-image: url(https://c1.staticflickr.com/3/2820/33895825530_054008ec67.jpg);
+    }
+.vid_sample_6::before {
+        background-image: url(https://c1.staticflickr.com/3/2820/33895825530_054008ec67.jpg);
+    }
 /******************/
 /*******PHOTO******/
 /******************/
-
+.pht_sample_1::before {
+        background-image: url(https://c1.staticflickr.com/3/2823/33437821204_b7d7d7db08.jpg);
+    }
+.pht_sample_2::before {
+        background-image: url(https://c1.staticflickr.com/3/2880/34239293896_a4a187228a.jpg);
+    }
+.pht_sample_3::before {
+        background-image: url(https://c1.staticflickr.com/3/2823/33437821204_b7d7d7db08.jpg);
+    }
+.pht_sample_4::before {
+        background-image: url(https://c1.staticflickr.com/3/2823/33437821204_b7d7d7db08.jpg);
+    }
+.pht_sample_5::before {
+        background-image: url(https://c1.staticflickr.com/3/2830/33469807123_bfa7e5fe73_b.jpg);
+    }
+.pht_sample_6::before {
+        background-image: url(https://c1.staticflickr.com/3/2847/33895831470_f99554c4ab.jpg);
+    }
 /******************/
-/********TYPE******/
+/********MORE******/
 /******************/
+.more_sample_1::before {
+        background-image: url(https://c1.staticflickr.com/3/2823/33437821204_b7d7d7db08.jpg);
+    }
+.more_sample_2::before {
+        background-image: url(https://c1.staticflickr.com/3/2823/33437821204_b7d7d7db08.jpg);
+    }
+.more_sample_3::before {
+        background-image: url(https://c1.staticflickr.com/3/2823/33437821204_b7d7d7db08.jpg);
+    }
+.more_sample_4::before {
+        background-image: url(https://c1.staticflickr.com/3/2823/33437821204_b7d7d7db08.jpg);
+    }
+.more_sample_5::before {
+        background-image: url(https://c1.staticflickr.com/3/2823/33437821204_b7d7d7db08.jpg);
+    }
+.more_sample_6::before {
+        background-image: url(https://c1.staticflickr.com/3/2823/33437821204_b7d7d7db08.jpg);
+    }
 
 
 /******************/
