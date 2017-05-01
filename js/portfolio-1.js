@@ -1,14 +1,6 @@
 /*JANINE FERNANDEZ portfolio-1.js - VIDEO*/
 
-    $(document).ready(function(){
-        $(function(){
-            
-        /*Portfolio.html header/footer link*/
-        $("#mainHeader").load("includes/mainHeader.html");
-        $("#mainFooter").load("includes/mainFooter.html");
-        
-        /*JANINE FERNANDEZ portfolio-1.js - VIDEO*/
-
+    
     $(document).ready(function(){
         $(function(){
             
