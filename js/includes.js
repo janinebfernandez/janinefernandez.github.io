@@ -7,8 +7,8 @@ $(function(){
         $("#footerContent").load("includes/lmgc-footer.html");
         
         /*Content loads for PAGES html files*/
-        $("#headerContent").load("../includes/lmgc-header.html");
-        $("#footerContent").load("../includes/lmgc-footer.html");
+        $("#headerContentPages").load("../includes/lmgc-header.html");
+        $("#footerContentPages").load("../includes/lmgc-footer.html");
         });
 
 
