@@ -257,9 +257,9 @@
           });
 	
 	
-	$( ".tee_times",this).mouseover(function() {
-	  $("#booking_time",this).css("background-color", "orange");
-	  $("#price",this).css("background-color", "orange");
+	$( ".tee_times").mouseover(function() {
+		$(this).find("#booking_time").css("background-color", "orange");
+		$(this).find("#price").css("background-color", "orange");
 	});
 	</script>
 
