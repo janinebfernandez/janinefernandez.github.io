@@ -47,6 +47,10 @@
     <!--CONTENT WRAPPER-->
     <div id="content_wrapper">
         <div id="main_content_block">
+		<div id="testing"><a href="">TESTING</a></div>
+		<p id="testWord">Testing Word</p>
+		
+		
             <p id="quote">Hello my name is <span class="color_block">Janine</span> and I like to <span class="color_block">create</span>.</p>
             
             <!--MAIN NAVIGATION FOR OPENING PAGE-->
@@ -75,6 +79,13 @@
           });
 	});
 	    
+	   
+
+	    $(document).ready(function(){
+	    	$('#testing').click(function() {
+          		$("#testWord").toggle();       
+        	});
+	    });
 	    
      $(document).ready(function() {
   
