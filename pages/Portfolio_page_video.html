@@ -21,6 +21,8 @@
     <script src="../js/event-handler.js"></script>
     <script src="../js/slider_popup.js"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <!--Keep updated for .load()-->
+
     
     <style>
         .content_body{
@@ -509,7 +511,16 @@
         
     </div><!--CONTENT WRAPPER ENDS-->
     </div><!--Page TRANSITION ends-->
-    
+    <script>
+	$(document).ready(function(){
+        $(function(){
+            
+		/*Portfolio.html header/footer link*/
+		$("#pageHeader").load("../includes/mainHeader.html");
+		$("#pageFooter").load("../includes/mainFooter.html");
+          });
+	});
+    </script>
     <!--***mainFooter.html***--> 
     <div id="pageFooter"></div>
     <!--*********************-->
