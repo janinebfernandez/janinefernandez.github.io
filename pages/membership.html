@@ -29,7 +29,7 @@
 
 <body>
 <!--------------------HEAD STARTS----------------------->
-<div id="headerContent"></div>
+<div id="headerContentPages"></div>
 <!---------------------HEAD ENDS------------------------>
 
 <!-----------------------SECTION------------------------>
@@ -123,8 +123,19 @@
         </ul>
     </div>
     
+    
+    <script>
+		$(document).ready(function(){
+			$(function(){
+				$("#headerContentPages").load("../includes/lmgc-header.html"); 
+		      		$("#footerContentPages").load("../includes/lmgc-footer.html"); 
+		    });
+          });
+	
+	
+	</script>
 <!-------------------FOOTER STARTS---------------------->
-<div id="footerContent"></div>
+<div id="footerContentPages"></div>
 <!--------------------FOOTER ENDS----------------------->
 </body>
 </html>
