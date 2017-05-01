@@ -28,9 +28,9 @@
 
 	
 <style>
-	p#booking_time:hover, #price:hover{
+	/*p#booking_time:hover, #price:hover{
 		background-color:orange;
-	}
+	}*/
 	</style>
 </head>
 
@@ -262,6 +262,15 @@
           });
 	
 	
+		
+		
+$(".teetimes_link").hover(
+    function(){
+        $(this).addClass('active');
+},
+    function() {
+        $(this).removeClass('active');
+    });
 	</script>
 
 <!-------------------FOOTER STARTS---------------------->
