@@ -759,9 +759,9 @@ header{
         text-align:center;
         padding:10px 0;
     }
-	#booking_time:hover, #price:hover{
+	/*#booking_time:hover, #price:hover{
 		background-color:orange;	
-	}
+	}*/
 
     /*TEETIME POPUP*/
     #popup{
