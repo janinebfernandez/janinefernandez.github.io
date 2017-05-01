@@ -1,7 +1,7 @@
 /*JANINE FERNANDEZ portfolio-1.js - VIDEO*/
 
     $(document).ready(function(){
-        $(function(){
+        /*$(function(){*/
             
         /*Portfolio.html header/footer link*/
         $("#mainHeader").load("includes/mainHeader.html");
@@ -11,11 +11,9 @@
         /*Portfolio_page.html header/footer link*/
         $("#pageHeader").load("../includes/mainHeader.html");
         $("#pageFooter").load("../includes/mainFooter.html");
+     
             
-            
-            
-            
-        });
+        /*});*/
         
         
         
