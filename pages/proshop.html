@@ -31,7 +31,7 @@
     
 <body>
 <!--HEAD STARTS-->
-<div id="headerContent"></div>
+<div id="headerContentPages"></div>
 <!--HEAD ENDS-->
 
 <!-----------------------SECTION------------------------>
@@ -143,11 +143,21 @@
     </div>
 
 <!-------------------FOOTER STARTS---------------------->
-<div id="footerContent"></div>
+<div id="footerContentPages"></div>
 <!--------------------FOOTER ENDS----------------------->
     
     
 <script>
+        /*HEADER & FOOTER PULL*/
+		$(document).ready(function(){
+			$(function(){
+				$("#headerContentPages").load("../includes/lmgc-header.html"); 
+		      		$("#footerContentPages").load("../includes/lmgc-footer.html"); 
+		    });
+          });
+
+    
+    
      var main = function(){
         $('.article').click(function(){
             $('.article').removeClass('current');
