@@ -74,7 +74,32 @@
 
           });
 	});
-    </script>
+	    
+	    
+     $(document).ready(function() {
+  
+         // contact form animations
+        $('#contact').click(function() {
+          $("#contactForm").toggle();       
+        });
+         
+         $('#close').click(function() {
+          $("#contactForm").css("display", "none");       
+        });    
+         /*Mobile Only*/
+            /*HEADER*/
+            $(".arrowContact").click(function(){
+                $("#contactForm").toggle();
+            });
+         
+            $("#menu").click(function(){
+                $("#mobile-links").toggle();
+            });
+                                 
+        /*Mobile Ony ENDS*/
+         
+     });/*function ENDS*/
+</script>
     <!--***mainFooter.html***--> 
     <div id="mainFooter"></div>
     <!--*********************-->
