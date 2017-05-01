@@ -29,7 +29,6 @@
             <!--<div id="contact"><i class="fa fa-envelope envelope" aria-hidden="true"></i></div>-->
             
                 <div id="contactForm">
-                    <p id="close">X</p>
                     <h3>Get in touch!</h3>
                     <h1 id="emailTo">janinebfernandez@gmail.com</h1>
                     <p id="contact_text">I'll get back to you as quickly as possible.</p>
@@ -66,16 +65,7 @@
 
 <script>
 	
-     $(document).ready(function() {
-  
-         // contact form animations
-        $('.envelope').click(function() {
-          $("#contactForm").toggle();       
-        });
-         
-         $('#close').click(function() {
-          $("#contactForm").css("display", "none");       
-        });    
+     $(document).ready(function() {  
          /*Mobile Only*/
             /*HEADER*/
             $(".arrowContact").click(function(){
