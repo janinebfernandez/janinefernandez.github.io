@@ -32,7 +32,7 @@
 
 <body>
 <!--------------------HEAD STARTS----------------------->
-<div id="headerContent"></div>
+<div id="headerContentPages"></div>
 <!---------------------HEAD ENDS------------------------>
 
 <!-----------------------SECTION------------------------>
@@ -230,10 +230,21 @@
 
 
 <!-------------------FOOTER STARTS---------------------->
-<div id="footerContent"></div>
+<div id="footerContentPages"></div>
 <!--------------------FOOTER ENDS----------------------->
 
 <script>    
+  
+  /*HEADER & FOOTER PULL*/
+		$(document).ready(function(){
+			$(function(){
+				$("#headerContentPages").load("../includes/lmgc-header.html"); 
+		      		$("#footerContentPages").load("../includes/lmgc-footer.html"); 
+		    });
+          });
+	
+	
+  
      var main = function(){
         $('.tournament').click(function(){
             $('.tournament').removeClass('current');
