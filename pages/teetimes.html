@@ -22,7 +22,7 @@
     
     <!--Javascript Stylesheets-->
     <!--<script src="../js/jquery.js"></script>-->
-    <script src="../js/includes.js"></script>
+    <!--<script src="../js/includes.js"></script>-->
     <script src="../js/content.js"></script>
 	<!--Keep updated for .load()-->
     	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -247,7 +247,15 @@
     <p id="call_now"> Call <strong>(858) 531 - 0000 </strong>or <strong>Reserve Online </strong>Now!
 </div><!--INDEX_WRAPPER ENDS-->
 <!--------------------SECTION  ENDS--------------------->
-
+	<script>
+		$(document).ready(function(){
+			$(function(){
+		      $("#footerContent").load("includes/lmgc-footer.html"); 
+		    });
+          });
+	
+	
+	</script>
 
 <!-------------------FOOTER STARTS---------------------->
 <div id="footerContent"></div>
