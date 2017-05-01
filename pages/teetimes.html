@@ -257,13 +257,16 @@
           });
 	
 	
-	$(".tee_times").mouseenter(function() {
-		$(this).find("#booking_time").css("background-color", "orange");
-		$(this).find("#price").css("background-color", "orange");
-	});
-	$(".tee_times").mouseleave(function() {
-		$(this).find("#booking_time").css("background-color", "none");
-		$(this).find("#price").css("background-color", "none");
+		$(document).ready(function(){
+	    		$(".tee_times").mouseenter(function(){
+				$('#booking_time',this).css("background-color","#E8C384");
+				$('#price',this).css("color","#E8C384");
+	    		});
+	    		$(".tee_times").mouseleave(function(){
+				$('#booking_time',this).css("background-color","rgb(115,115,115)");
+				$('#price',this).css("color","rgb(225,225,225)")
+	    		});
+
 	});
 	</script>
 
