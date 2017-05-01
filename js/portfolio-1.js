@@ -64,19 +64,9 @@
         });
         
         
- });/*DOCUMENT READY ENDS*/
         
         
-      
-        /*Portfolio_page.html header/footer link*/
-        $("#pageHeader").load("../includes/mainHeader.html");
-        $("#pageFooter").load("../includes/mainFooter.html");
-            
-            
-            
-            
-        });
-        
+
         
         
        
