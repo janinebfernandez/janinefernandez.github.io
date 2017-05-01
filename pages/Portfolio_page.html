@@ -20,7 +20,8 @@
     <script src="../js/jquery.js"></script>
     <script src="../js/portfolio-1.js"></script>
     <script src="../js/page-transition.js"></script>
-    
+    <!--Keep updated for .load()-->
+    	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     
@@ -92,6 +93,16 @@
         
     </div><!--CONTENT WRAPPER ENDS-->
     
+    <script>
+	$(document).ready(function(){
+        $(function(){
+            
+		/*Portfolio.html header/footer link*/
+		$("#pageHeader").load("../includes/mainHeader.html");
+		$("#pageFooter").load("../includes/mainFooter.html");
+          });
+	});
+    </script>
     
     <!--***mainFooter.html***--> 
     <div id="pageFooter"></div>
