@@ -257,11 +257,10 @@
           });
 	
 	
-	$( ".tee_times").mouseover(function() {
+	$( ".tee_times").mouseenter(function() {
 		$(this).find("#booking_time").css("background-color", "orange");
 		$(this).find("#price").css("background-color", "orange");
-	});
-	$( ".tee_times").mouseleave(function() {
+	}).mouseleave(function() {
 		$(this).find("#booking_time").css("background-color", "none");
 		$(this).find("#price").css("background-color", "none");
 	});
