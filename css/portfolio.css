@@ -104,19 +104,17 @@ header{
     }
 
     .fa-envelope{
-        right: 15px;
-        position: absolute;
-        margin-top: 18px;
+        float:right;
+        margin-top:7px;
     }
 
     /*Mobile Only*/
         .arrowContact{
             display:none !important;
-            right:40% !important;
-            margin-top:5px !important;
         }
         
-        #mobile-nav{
+        /*Mobile Nav*/
+        .dropdown{
             display:none;
         }
     
@@ -152,7 +150,7 @@ header{
             position: absolute;
             /* margin: 0 auto; */
             right: 0;
-            top: 55px;
+            top: 50px;
             padding: 5px;
             border: 5px solid rgb(245,245,220);
         }
@@ -452,6 +450,7 @@ div#back_button {
 }
 
     #main_content_block{
+        margin-top:0;
         background-color:rgba(220,220,220,.7);
     }
 
