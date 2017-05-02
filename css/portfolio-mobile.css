@@ -60,13 +60,13 @@ a:hover, a:active{
 }
 
 .web_background{
-    /*background: url("../samples/backgrounds/web_background.jpg") no-repeat fixed;*/
-    background-size:100%;
-    /*animation:fadein 2s;*/
-    position:absolute;
-    margin:0;
-    padding:0;
-    height:100%;
+     /* background-color: white; */
+    margin: 200px 0 20px 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0;
+    position: relative;
 }
 
 
@@ -196,12 +196,13 @@ header{
         background-color: rgba(255,255,255,.7);
         width: 95%;
         height: auto;
-        position: relative;
+        position: absolute;
         margin: 0;
         right: none;
         top: 30px;
         padding: 5px;
         border: 5px solid rgb(245,245,220);
+        z-index: 1;
     }
 
     #contactForm h3,#contactForm h1,small,#contact_text,#daily_quote{
