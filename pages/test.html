@@ -1,0 +1,44 @@
+<!--main-testing-->
+<html>
+<head><title>LMGC Contact</title>
+    <!--Sets viewport to device's native width at 100%.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Google Font - Nunito-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        
+    <!--External Stylesheets----!!change location in GITHUB!!-->
+    <link href="../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../css/lmgc.css" type="text/css" rel="stylesheet">
+    
+    <!--Responsive Stylesheet-->
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 768px)" href="../css/lmgc_tablet.css" />
+    
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 460px)" href="../css/lmgc_mobile.css" />
+    
+    <!--Font Awesome Stylesheet-->
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/content.js"></script>
+	<!--Keep updated for .load()-->
+    	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<div id="headerContentPages"></div>
+
+<p>THIS IS THE SAMPLE CONTENT!</p>
+</body>
+
+<script>
+		$(document).ready(function(){
+			$(function(){
+				$("#headerContentPages").load("../includes/lmgc-header.html"); 
+		      		$("#footerContentPages").load("../includes/lmgc-footer.html"); 
+		    });
+          });
+	
+	
+	</script>
+</html>
