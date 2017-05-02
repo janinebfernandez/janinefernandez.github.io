@@ -501,6 +501,7 @@ div#back_button {
 }
 
     #main_content_block{
+        margin-top:15em;
         background-color:rgba(220,220,220,.7);
     }
 
