@@ -1,0 +1,86 @@
+<!--WEB.HTML - WEB DEVELOPMENT PAGE-->
+<html>
+<head>
+    <title>Web Dev - JF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    
+    <!--Stylesheet-->
+    <link href="../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../css/portfolio.css" type="text/css" rel="stylesheet">
+    
+    <!--Responsive Stylesheet-->
+    <link href="../css/portfolio_mobile.css" type="text/css" rel="stylesheet">
+    
+    <!--Script/Grayscale Hover effect-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    
+    <style>
+    .current_web{
+        color:rgb(193,0,0)!important;
+        font-weight: 600;
+    }
+    
+    </style>
+    
+</head>
+<body>
+<div id="wrapper">
+    <!------------------------>
+    <div id="mainHeader"></div>
+    <!------------------------>
+    
+    
+    <div id="content">
+        <div class="grid"><a href="web_lmgc.html">
+            <ul class="gray-gray">
+                <li class="grid_1"><img src="../images/torreyPines.jpg"></li>
+                <li class="grid_2"><img src="../images/IMG_7742.JPG"></li>
+                <li class="grid_3"><img src="../images/IMG_2622.JPG"></li>
+            </ul><div class="grid_1_text"><p class="p1">RESPONSIVE DESIGN</p><p class="p2">LAKE MIRAMAR GOLF COURSE</p></div></a></div>
+        <div class="grid"><a href="web_lmgc.html">
+            <ul class="gray-gray">
+                <li class="grid_3"><img src="../images/torreyPines.jpg"></li>
+                <li class="grid_1"><img src="../images/IMG_7742.JPG"></li>
+                <li class="grid_2"><img src="../images/IMG_2622.JPG"></li>
+            </ul><div class="grid_1_text"><p class="p1">INFOGRAPHICS</p><p class="p2">ESPRESSO MIX</p></div></a></div>
+        <div class="grid"><a href="web_lmgc.html">
+            <ul class="gray-gray">
+                <li class="grid_2"><img src="../images/torreyPines.jpg"></li>
+                <li class="grid_3"><img src="../images/IMG_7742.JPG"></li>
+                <li class="grid_1"><img src="../images/IMG_2622.JPG"></li>
+            </ul><div class="grid_1_text"><p class="p1">WORDPRESS</p><p class="p2">POCKY WORLD</p></div></a></div>
+        <div class="grid last_grid"><a href="web_lmgc.html">
+            <ul class="gray-gray">
+                <li class="grid_1"><img src="../images/torreyPines.jpg"></li>
+                <li class="grid_2"><img src="../images/IMG_7742.JPG"></li>
+                <li class="grid_3"><img src="../images/IMG_2622.JPG"></li>
+            </ul><div class="grid_1_text"><p class="p1">CSS TRICKS</p><p class="p2">SAN DIEGO VIEWS</p></div></a></div>
+        <div id="button_container"><a href="../portfolio.html"><div id="back_button"></div></a></div>
+    </div><!--content ENDS-->
+    
+    <!------------------------>
+    <div id="mainFooter"></div>
+    <!------------------------>
+</div><!--wrapper ends-->
+    
+    
+    <script>
+     
+        $(document).ready(function(){
+            $(function(){
+            /*Portfolio_page.html header/footer link*/
+            $("#mainHeader").load("../includes/mainHeader.html");
+            $("#mainFooter").load("../includes/mainFooter.html");
+
+
+            });
+        });
+        
+    </script>
+    
+    
+</body>    
+    
+</html>

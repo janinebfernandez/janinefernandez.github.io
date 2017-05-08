@@ -1,0 +1,68 @@
+<!--mainHeader.html - PORTFOLIO.html-->
+
+<!--FontAwesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script>
+/*MOBILE NAVIGATION*/
+    /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        
+    function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+     
+
+</script>
+
+<header>
+        <div id="main_header">
+            <div id="logo"><a href="../portfolio.html">jf</a></div><!--logo ENDS-->
+            <nav>
+                <ul>
+                    <li><a href="web.html" class="current_web">Web Dev</a></li>
+                    <li><a href="graphic.html" class="current_graphic">Graphic Design</a></li>
+                    <li><a href="photo.html" class="current_photo">Photography</a></li>
+                    <li><a href="video.html" class="current_video">Video</a></li>
+                    <li><a href="otherwork.html" class="current_other">Other</a></li>
+                </ul>
+            </nav><!--nav ENDS-->
+            <div id="about_me">
+                <ul>
+                    <li id="about_me_link"><a href="aboutme.html" class="current_aboutme">About Me</a></li>
+                    <li class="icon"><a href="https://www.instagram.com/j.ix/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class="icon"><a href="https://www.flickr.com/photos/148090807@N03/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+                    <li class="icon"><a href="https://www.youtube.com/channel/UCWjmkdK2poOYL6IYrYUskwQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li class="icon"><a href="https://us.linkedin.com/in/janinebfernandez" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div><!--about_me ENDS-->
+            
+            <!--DROPDOWN MENU - mobile only-->
+            <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">MENU</button>
+              <div id="myDropdown" class="dropdown-content">
+                 <a href="../portfolio.html">MAIN</a>
+                 <a href="aboutme.html" class="current_aboutme">ABOUT ME</a>
+                 <a href="web.html" class="current_web">WEB DESIGN</a>
+                 <a href="graphic.html" class="current_graphic">GRAPHIC DESIGN</a>
+                 <a href="photo.html" class="current_photo">PHOTOGRAPHY</a>
+                 <a href="video.html" class="current_video">VIDEO</a>
+                 <a href="otherwork.html" class="current_other">OTHER</a>
+              </div>
+        </div><!--MOBILE MENU ENDS-->
+        </div><!--main_header ENDS-->
+    </header>

@@ -1,0 +1,78 @@
+<!--ABOUTME.HTML - PROFILE PAGE-->
+<html>
+<head>
+    <title>About Me - JF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    
+    <!--Stylesheet-->
+    <link href="../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../css/portfolio.css" type="text/css" rel="stylesheet">
+    
+    <!--Responsive Stylesheet-->
+    <link href="../css/portfolio_mobile.css" type="text/css" rel="stylesheet">
+    
+    <!--Script/Grayscale Hover effect-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    
+    <style>
+    .current_aboutme{
+        color:rgb(193,0,0)!important;
+        font-weight: 600;
+    }
+    
+    </style>
+    
+</head>
+<body>
+<div id="wrapper">
+    <!------------------------>
+    <div id="mainHeader"></div>
+    <!------------------------>
+    
+    
+    <div id="content">
+        <div id="img_background"><img src="../images/torreyPines.jpg">
+            <div id="profile_text">
+                <span id="quote">"Hello my name is Janine</span>
+                <p>Design and numbers have always stuck out to me growing up. Combining these interest I find ways to express myself through Art. I focus on Web Design , Photography, and Graphic Design, but why not explore other medias. Art can be anything, Art is all around you, and creating is limitless.</p>
+                <span id="quote">& i love to create!"</span>
+                
+                <p id="interest">Web Design - Graphic Design - Photography - Video Editing</p>
+                        <h3><strong>San Diego State University:</strong></h3>
+                        <p>Multimedia Art AND Computer Science</p>
+                        
+                <div id="contact_info">
+                        <span id="resume"><a href="https://www.dropbox.com/s/u87havb5k0rkcxq/Janine_Fernandez_Reference_2017_Portfolio.pdf?dl=0" target="_blank">RESUME</a></span>
+                        <p id="phone_number">1(858) 531- 3448</p>
+                        <p>janinebfernandez@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div><!--content ENDS-->
+    
+    <!------------------------>
+    <div id="mainFooter"></div>
+    <!------------------------>
+</div><!--wrapper ends-->
+    
+    
+    <script>
+     
+        $(document).ready(function(){
+            $(function(){
+            /*Portfolio_page.html header/footer link*/
+            $("#mainHeader").load("../includes/mainHeader.html");
+            $("#mainFooter").load("../includes/mainFooter.html");
+
+
+            });
+        });
+        
+    </script>
+    
+    
+</body>    
+    
+</html>
