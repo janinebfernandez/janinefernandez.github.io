@@ -295,15 +295,12 @@ section{
         padding-top:30px;
     }
 
-.section_overview{
-    
-}
 
 .overview_1{
     background-color:palevioletred;
     width:30%;
     float:left;
-    height:300px;
+    height:auto;
 }
 
 .overview_2{
