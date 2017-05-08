@@ -306,7 +306,7 @@ section{
 .overview_2{
     background-color:peru;
     width:69%;
-    height:500px;
+    height:auto;
     float:right; 
     margin-top: 0px;
 }
@@ -314,7 +314,7 @@ section{
 /*WEB/PHOTO/OTHER only (CONTENT)*/
 .overview_3{
     width: 30%;
-    height: 190px;
+    height: auto;
     margin-top: 10px;
     background-color: yellow;
     float: left;
