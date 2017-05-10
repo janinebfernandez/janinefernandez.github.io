@@ -24,6 +24,12 @@
     
         h2{font-size:30px;}
         img{width:100%;}
+        block{
+            font-size:15px;
+            background-color:yellow;
+            padding:2px;
+            border-radius:1px;
+        }
         
         .overview_3{
             text-align: center;
@@ -36,7 +42,7 @@
         
         .overview_4{
             width:100%;
-            margin-top:25px;
+            margin-top:100px;
             /*background-color:aquamarine;*/
             text-align:  center;
             position: relative;
@@ -45,7 +51,49 @@
         
             .overview_4 img{
                 width:70%;
-                padding-top:10px;
+                background-color: blue;
+                overflow: none;
+                float:left;
+            }
+        
+            .overview_4 p{
+                background-color: yellow;
+                position: absolute;
+                right: 50;
+                width: 250px;
+                height: 500px;
+                margin-top: 10px;
+                line-height:50px;
+                align-content: center;
+            }
+        
+        #golf_img{
+            /*background-color:orange;*/
+            position:relative;
+            float:left;
+            text-align: center;
+            margin:100px 0;
+        }
+        
+            #golf_img ul li{
+                display:inline-block;
+                width:19.7%;
+            }
+        
+            #golf_img_text_1{
+                padding: 10px 0;
+                line-height: 40px;
+                width: 36%;
+                text-align: right;
+                float:left;
+            }
+        
+            #golf_img_text_2{
+                float:right;
+                background-color:yellow;
+                width:60%;
+                font-size:50px;
+                padding:25px 0;
             }
         
         .overview_5{
@@ -85,9 +133,16 @@
                 <div class="overview_3"><h2>View on any kind of device</h2><p>Designed to adjust on any screen width.</p></div>
                 <div class="overview_4"><h2>FUNCTIONAL & INFORMATIVE</h2>
                     <img src="https://c1.staticflickr.com/3/2876/34170098422_e993d56e6e_z.jpg">
+                    <p>This is a quick sample text descriving the most important part about this project. Research on the content. More Content here. More content here. More content here. More content here.<img src="https://c1.staticflickr.com/4/3938/33101128310_51da2d0155.jpg" style="width:100%;"></p>
                 </div>
+                    <span id="golf_img"><ul>
+                        <li><img src="https://c1.staticflickr.com/3/2658/32231469374_82a299443b.jpg"></li>
+                        <li><img src="https://c1.staticflickr.com/3/2429/32695039330_a5f004220a.jpg"></li>
+                        <li><img src="https://c1.staticflickr.com/4/3917/32921014532_fe18e76c66.jpg"></li>
+                        <li><img src="https://c1.staticflickr.com/3/2700/32950120141_150af275f4.jpg"></li>
+                        <li><img src="https://c1.staticflickr.com/4/3847/32695038830_48f0a5e9d7.jpg"></li>
+                    </ul><p id="golf_img_text_1">This site contains a <block>dynamic content</block> . Complete use of HTML,CSS,JS.<br>Full of images, sliders, selectors.</p><p id="golf_img_text_2">HTML / CSS / JS</p></span>
                 <div class="overview_5">
-                    <p>Add some other text here! Maybe add a really long one see how it looks.</p>
                     <img src="https://c1.staticflickr.com/3/2859/34328213415_440f84de9a_z.jpg">
                     <img src="https://c1.staticflickr.com/4/3817/32640720434_b615a0d19d_h.jpg">
                 </div>
