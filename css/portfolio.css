@@ -270,14 +270,11 @@ section{
     }
 
 .section_description{
-    width:30%;
+    width:35%;
     /*background-color:aquamarine;*/
     float:right;
+    margin:0px;
 }
-
-    .section_description{
-        margin:0px;
-    }
     
     .section_description a{
         float:right;
@@ -293,6 +290,7 @@ section{
 
     .section_description p{
         padding-top:30px;
+        line-height: 15px;
     }
 
 
@@ -316,7 +314,7 @@ section{
     width: 30%;
     height: auto;
     margin-top: 10px;
-    background-color: yellow;
+   /* background-color: yellow;*/
     float: left;
     
 }
