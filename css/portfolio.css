@@ -295,7 +295,7 @@ section{
 
 
 .overview_1{
-    background-color:palevioletred;
+    /*background-color:palevioletred;*/
     width:30%;
     float:left;
     height:auto;
