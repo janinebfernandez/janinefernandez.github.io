@@ -16,7 +16,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     
-    <style>
+<style>
+/*MOBILE CUSTOME STYLESHEET*/
     #current_web{
         color:rgb(193,0,0)!important;
         font-weight: 600;
@@ -51,7 +52,7 @@
         
             .overview_4 img{
                 width:70%;
-                background-color: blue;
+                /*background-color: blue;*/
                 overflow: none;
                 float:left;
             }
@@ -59,8 +60,8 @@
             .overview_4 p{
                 background-color: yellow;
                 position: absolute;
-                right: 50;
-                width: 250px;
+                right: 2%;
+                width: 25%;
                 height: 500px;
                 margin-top: 10px;
                 line-height:50px;
@@ -108,7 +109,63 @@
                 width:50%;
                 float:left;
             }
-    </style>
+    @media only screen and (max-width : 736px){
+        .overview_4{
+            margin-top:10px;
+        }
+        
+        .overview_4 img{
+            width: 100%%;
+            background-color: blue;
+            float: none;
+        }
+        
+        .overview_4 p{
+            background-color: yellow;
+            position: relative;
+            right: 0;
+            width: 100%;
+            height: 500px;
+            margin-top: 10px;
+            line-height: 50px;
+            align-content: center;
+        }
+        
+        #golf_img ul li{
+            display: inline-block;
+            width: 49%;
+        }
+        
+        #golf_img{
+            position: relative;
+            float: left;
+            text-align: center;
+            margin: 40% 0 0 0;
+        }
+        
+        #golf_img_text_1{
+            padding: 10px 0;
+            line-height: 40px;
+            width: 100%;
+            text-align: center;
+            float: none;
+        }
+        
+        #golf_img_text_2{
+            float: none;
+            background-color: yellow;
+            width: 100%;
+            font-size: 50px;
+            padding: 25px 0;
+        }
+        
+        .overview_5 img{
+            width: 100%;
+            float: none;    
+        }
+        
+    }/*@media MOBILE ONLy ends*/
+</style>
 </head>
 <body>
 <div id="wrapper">
